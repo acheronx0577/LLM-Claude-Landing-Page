@@ -22,11 +22,11 @@ export default function HeroSection() {
         </p>
       </div>
 
-      <p className="[word-break:break-word] min-w-full w-min shrink-0 text-center font-['Sk-Modernist:Bold',sans-serif] text-[80px] not-italic leading-0 text-white">
-        <span className="leading-[88px]">Code smarter, in your </span>
-        <span className="leading-[88px] text-[#ff541f]">terminal</span>
-        <span className="leading-[88px]">.</span>
-      </p>
+      <h1 className="[word-break:break-word] min-w-full w-min shrink-0 text-center font-['Sk-Modernist:Bold',sans-serif] text-[80px] not-italic leading-[1.1] text-white">
+        <span>Code smarter, in your </span>
+        <span className="text-[#ff541f]">terminal</span>
+        <span>.</span>
+      </h1>
 
       <p className="[word-break:break-word] w-full max-w-[920px] shrink-0 text-center font-['Sk-Modernist:Regular',sans-serif] text-[22px] not-italic leading-[normal] text-[rgba(255,255,255,0.7)]">
         LLM Claude is a terminal AI coding assistant with Read, Write, Bash, LSP

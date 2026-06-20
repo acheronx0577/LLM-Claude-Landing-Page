@@ -34,7 +34,7 @@ export default function LandingNav() {
       <button
         type="button"
         onClick={() => handleNav("home")}
-        className="flex items-center justify-center relative shrink-0 cursor-pointer rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff541f]"
+        className="flex items-center justify-center relative shrink-0 cursor-pointer rounded-sm transition-opacity duration-200 hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff541f]"
         aria-label="Scroll to top"
       >
         <div className="-scale-y-100 flex-none rotate-180">
@@ -80,7 +80,7 @@ export default function LandingNav() {
               {label}
               <span
                 aria-hidden
-                className={`absolute bottom-0 left-0 h-[2px] w-full rounded-[1.5px] bg-[#ff541f] transition-all duration-300 ${
+                className={`absolute bottom-0 left-0 h-[2px] w-full rounded-[1.5px] bg-[#ff541f] transition-all duration-300 motion-reduce:transition-none ${
                   isActive ? "opacity-100 scale-x-100" : "opacity-0 scale-x-0"
                 }`}
               />
@@ -93,7 +93,7 @@ export default function LandingNav() {
         href={LLM_CLAUDE_REPO.replace(/\.git$/, "")}
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-[#ff541f] content-stretch flex items-center justify-center overflow-clip px-[35px] py-[15px] relative rounded-[10px] shrink-0 cursor-pointer transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:scale-100 motion-reduce:active:scale-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white no-underline"
+        className="bg-[#ff541f] content-stretch flex items-center justify-center overflow-clip px-[35px] py-[15px] relative rounded-[10px] shrink-0 cursor-pointer transition-[transform,filter] duration-200 hover:scale-[1.02] hover:brightness-110 active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:scale-100 motion-reduce:active:scale-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white no-underline"
         data-name="Link"
       >
         <span className="font-['Sk-Modernist:Bold',sans-serif] text-[20px] text-white leading-[19.2px]">

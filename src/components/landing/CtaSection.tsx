@@ -10,10 +10,11 @@ const CTA_GRADIENT =
 
 export default function CtaSection() {
   return (
-    <div
+    <section
       className="-translate-x-1/2 absolute left-1/2 w-[1120px]"
       style={{ top: SECTION_CTA_TOP }}
       data-name="CTA-Section"
+      aria-labelledby="cta-heading"
     >
       <div className="relative h-[375px] overflow-hidden rounded-[30px] border border-[rgba(255,255,255,0.2)] bg-[rgba(255,255,255,0.04)]">
         <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[30px]">
@@ -34,18 +35,21 @@ export default function CtaSection() {
         </div>
 
         <div className="relative flex h-full flex-col items-center justify-center gap-[35px] px-[56px] py-[48px]">
-          <p className="max-w-[789px] text-center font-['Sk-Modernist:Bold',sans-serif] text-[64px] leading-[normal] text-white">
+          <h2
+            id="cta-heading"
+            className="max-w-[789px] text-center font-['Sk-Modernist:Bold',sans-serif] text-[64px] leading-[normal] text-white"
+          >
             Ready to run it locally?
-          </p>
-          <p className="max-w-[618px] text-center font-['Sk-Modernist:Regular',sans-serif] text-[20px] leading-[22.4px] text-[rgba(255,255,255,0.8)]">
+          </h2>
+          <p className="max-w-[618px] text-center font-['Sk-Modernist:Regular',sans-serif] text-[20px] leading-[22.4px] text-[rgba(255,255,255,0.88)]">
             Clone the repo, add your API key, and start chatting in the
-            terminal—or wire it into your editor over ACP.
+            terminal, or wire it into your editor over ACP.
           </p>
           <ScrollCta target="home" variant="primary-with-arrow">
             Clone the repo
           </ScrollCta>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

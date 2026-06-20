@@ -151,7 +151,10 @@ export default function TerminalPreview() {
   const title = `LLM Claude v${VERSION}`;
 
   return (
-    <div className="relative mt-[8px] w-full max-w-[920px]">
+    <div
+      aria-hidden
+      className="relative mt-[8px] w-full max-w-[920px]"
+    >
       <div className="rounded-[18px] border border-[rgba(255,84,31,0.35)] bg-linear-to-b from-[rgba(255,84,31,0.18)] to-[rgba(255,84,31,0.04)] p-px shadow-[0_24px_80px_rgba(0,0,0,0.45)]">
         <div className="overflow-hidden rounded-[17px] bg-[#050505] px-[14px] py-[14px]">
           <div className="overflow-hidden rounded-[8px] border border-[rgba(255,255,255,0.12)] bg-[#080808]">

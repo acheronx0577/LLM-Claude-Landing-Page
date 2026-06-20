@@ -78,7 +78,8 @@ export default function App() {
             height: DESIGN_CANVAS_HEIGHT * scale,
           }}
         >
-          <div
+          <main
+            id="main-content"
             style={{
               width: DESIGN_WIDTH,
               height: DESIGN_CANVAS_HEIGHT,
@@ -87,7 +88,7 @@ export default function App() {
             }}
           >
             <AiLandingPage />
-          </div>
+          </main>
         </div>
 
         <FooterSection scale={scale} style={{ minHeight: scaledFooterHeight }} />

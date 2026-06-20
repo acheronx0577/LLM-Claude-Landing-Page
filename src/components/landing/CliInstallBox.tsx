@@ -65,6 +65,14 @@ export default function CliInstallBox() {
 
   return (
     <div className="flex flex-col items-center gap-[10px]">
+      <div
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+        className="sr-only"
+      >
+        {copied ? "Install command copied to clipboard" : ""}
+      </div>
       <div className="relative w-fit max-w-full rounded-[12px] border border-[#ff541f] bg-[rgba(0,0,0,0.45)] p-[3px] shadow-[0_0_24px_rgba(255,84,31,0.12)]">
         <div className="flex items-center gap-[10px] rounded-[8px] bg-[#0a0a0a] px-[14px] py-[11px]">
           <button
@@ -80,7 +88,7 @@ export default function CliInstallBox() {
           </code>
         </div>
       </div>
-      <p className="max-w-[920px] text-center font-['Sk-Modernist:Regular',sans-serif] text-[14px] text-[rgba(255,255,255,0.45)]">
+      <p className="max-w-[920px] text-center font-['Sk-Modernist:Regular',sans-serif] text-[14px] text-[rgba(255,255,255,0.62)]">
         Supported on Windows, macOS, and Linux · then{" "}
         <code className="text-[rgba(255,255,255,0.65)]">bun install</code> and{" "}
         <code className="text-[rgba(255,255,255,0.65)]">.\run.ps1</code>

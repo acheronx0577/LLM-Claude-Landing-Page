@@ -17,6 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="overflow-x-clip">
       <body className="overflow-x-clip">
+        <a
+          href="#home"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-[#ff541f] focus:px-4 focus:py-2 focus:text-white focus:outline-none"
+        >
+          Skip to content
+        </a>
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>

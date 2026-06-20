@@ -28,14 +28,14 @@ const FAQ_ITEMS = [
   {
     question: "Is it free to use?",
     answer:
-      "The CLI is open source. You bring your own API keys for Groq, OpenRouter, or optional search providers like Tavily or Brave—there is no hosted SaaS plan or usage gate in the project itself.",
+      "The CLI is open source. You bring your own API keys for Groq, OpenRouter, or optional search providers like Tavily or Brave. There is no hosted SaaS plan or usage gate in the project itself.",
   },
 ] as const;
 
 function FaqArrow({ open }: { open: boolean }) {
   return (
     <div
-      className={`relative size-[28.62px] shrink-0 transition-transform duration-300 ease-out ${
+      className={`relative size-[28.62px] shrink-0 transition-transform duration-300 ease-out motion-reduce:transition-none ${
         open ? "rotate-180" : "rotate-0"
       }`}
       aria-hidden
@@ -70,17 +70,21 @@ export default function FaqSection() {
   }, [openIndex, lenis]);
 
   return (
-    <div
+    <section
       id="docs"
       className="absolute content-stretch flex flex-col gap-[76px] items-center left-[274px] w-[891.995px]"
       style={{ top: SECTION_FAQ_TOP }}
       data-name="FAQ-Section"
+      aria-labelledby={`${baseId}-heading`}
     >
       <div className="[word-break:break-word] content-stretch flex flex-col gap-[29px] items-center not-italic relative shrink-0 text-center w-[830px]">
-        <div className="flex flex-col font-['Sk-Modernist:Bold',sans-serif] justify-center relative shrink-0 text-[64px] text-white w-[555.708px] whitespace-pre-wrap leading-[normal]">
-          <p className="mb-0">{`Frequently Asked `}</p>
-          <p>Questions</p>
-        </div>
+        <h2
+          id={`${baseId}-heading`}
+          className="flex flex-col font-['Sk-Modernist:Bold',sans-serif] justify-center relative shrink-0 text-[64px] text-white w-[555.708px] whitespace-pre-wrap leading-[normal]"
+        >
+          <span className="block">{`Frequently Asked `}</span>
+          <span className="block">Questions</span>
+        </h2>
         <p className="font-['Sk-Modernist:Regular',sans-serif] text-[#d9d9d9] text-[20px] leading-[28.62px] max-w-[830px]">
           {`Got questions about the CLI, tools, run modes, and setup? Here are the essentials.`}
         </p>
@@ -89,7 +93,6 @@ export default function FaqSection() {
       <div
         className="content-stretch flex flex-col gap-[22.658px] items-start relative shrink-0 w-full"
         data-name="FAQ-Content"
-        role="list"
       >
         {FAQ_ITEMS.map((item, index) => {
           const open = openIndex === index;
@@ -97,7 +100,7 @@ export default function FaqSection() {
           const buttonId = `${baseId}-button-${index}`;
 
           return (
-            <div key={item.question} className="relative shrink-0 w-full" role="listitem">
+            <div key={item.question} className="relative shrink-0 w-full">
               <div
                 aria-hidden
                 className="pointer-events-none absolute inset-0 border-b border-solid border-[rgba(255,255,255,0.1)]"
@@ -107,39 +110,36 @@ export default function FaqSection() {
                 id={buttonId}
                 aria-expanded={open}
                 aria-controls={panelId}
-                className="relative flex w-full cursor-pointer items-start justify-between rounded-sm p-[23.85px] text-left transition-colors duration-200 hover:bg-white/2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff541f]"
+                className="relative flex w-full cursor-pointer items-start justify-between rounded-sm p-[23.85px] text-left transition-colors duration-200 hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff541f]"
                 onClick={() => setOpenIndex(open ? -1 : index)}
               >
-                <div className="min-w-0 flex-1 pr-4">
-                  <p className="font-['Sk-Modernist:Regular',sans-serif] text-[20px] text-white leading-[28.62px]">
-                    {item.question}
-                  </p>
-
-                  <div
-                    id={panelId}
-                    role="region"
-                    aria-labelledby={buttonId}
-                    aria-hidden={!open}
-                    className="grid transition-[grid-template-rows,opacity] duration-300 ease-out motion-reduce:transition-none"
-                    style={{
-                      gridTemplateRows: open ? "1fr" : "0fr",
-                      opacity: open ? 1 : 0,
-                    }}
-                  >
-                    <div className="overflow-hidden">
-                      <p className="pt-[23.85px] font-['Sk-Modernist:Regular',sans-serif] text-[18px] text-[#919191] leading-[23.85px] tracking-[-0.0596px]">
-                        {item.answer}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
+                <p className="min-w-0 flex-1 pr-4 font-['Sk-Modernist:Regular',sans-serif] text-[20px] text-white leading-[28.62px]">
+                  {item.question}
+                </p>
                 <FaqArrow open={open} />
               </button>
+
+              <div
+                id={panelId}
+                role="region"
+                aria-labelledby={buttonId}
+                hidden={!open}
+                className="grid px-[23.85px] pb-[23.85px] transition-[grid-template-rows,opacity] duration-300 ease-out motion-reduce:transition-none"
+                style={{
+                  gridTemplateRows: open ? "1fr" : "0fr",
+                  opacity: open ? 1 : 0,
+                }}
+              >
+                <div className="overflow-hidden">
+                  <p className="font-['Sk-Modernist:Regular',sans-serif] text-[18px] text-[#a8a8a8] leading-[23.85px] tracking-[-0.0596px]">
+                    {item.answer}
+                  </p>
+                </div>
+              </div>
             </div>
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
