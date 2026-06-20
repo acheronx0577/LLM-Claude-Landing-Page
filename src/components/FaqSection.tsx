@@ -35,7 +35,7 @@ const FAQ_ITEMS = [
 function FaqArrow({ open }: { open: boolean }) {
   return (
     <div
-      className={`relative size-[28.62px] shrink-0 transition-transform duration-300 ease-out motion-reduce:transition-none ${
+      className={`relative size-[28.62px] shrink-0 transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${
         open ? "rotate-180" : "rotate-0"
       }`}
       aria-hidden
@@ -123,15 +123,16 @@ export default function FaqSection() {
                 id={panelId}
                 role="region"
                 aria-labelledby={buttonId}
-                hidden={!open}
-                className="grid px-[23.85px] pb-[23.85px] transition-[grid-template-rows,opacity] duration-300 ease-out motion-reduce:transition-none"
-                style={{
-                  gridTemplateRows: open ? "1fr" : "0fr",
-                  opacity: open ? 1 : 0,
-                }}
+                aria-hidden={!open}
+                className="grid transition-[grid-template-rows] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none"
+                style={{ gridTemplateRows: open ? "1fr" : "0fr" }}
               >
-                <div className="overflow-hidden">
-                  <p className="font-['Sk-Modernist:Regular',sans-serif] text-[18px] text-[#a8a8a8] leading-[23.85px] tracking-[-0.0596px]">
+                <div className="min-h-0 overflow-hidden">
+                  <p
+                    className={`px-[23.85px] pb-[23.85px] font-['Sk-Modernist:Regular',sans-serif] text-[18px] text-[#a8a8a8] leading-[23.85px] tracking-[-0.0596px] transition-opacity duration-300 ease-out motion-reduce:transition-none ${
+                      open ? "opacity-100" : "opacity-0"
+                    }`}
+                  >
                     {item.answer}
                   </p>
                 </div>
