@@ -1,5 +1,5 @@
-export const HERO_STATS_TOP = 1395;
-export const HERO_STATS_FADE_TOP = 1325;
+export const HERO_STATS_TOP = 1339;
+export const HERO_STATS_FADE_TOP = 1269;
 export const HERO_STATS_FADE_HEIGHT = 372;
 
 /** Orange dot field — below hero/stats (fixed top; do not use %). */
