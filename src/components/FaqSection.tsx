@@ -5,29 +5,29 @@ import { useEffect, useId, useState } from "react";
 
 const FAQ_ITEMS = [
   {
-    question: "What is this platform used for?",
+    question: "What is LLM Claude?",
     answer:
-      "It's an AI-powered design assistant that helps you generate, customize, and export creative assets in seconds—whether for personal projects, brand work, or commercial use.",
+      "An open-source terminal AI coding assistant built for the CodeCrafters Claude Code challenge. It runs an agent loop with Read, Write, Bash, LSP tools, web search, and optional MCP integrations.",
   },
   {
-    question: "What happens if I hit my free generation limit?",
+    question: "How do I install it?",
     answer:
-      "You'll be prompted to upgrade to a paid plan for higher limits. Your existing projects stay saved, and you can still browse, export previous work, and manage your account on the free tier.",
+      "Clone the GitHub repo, run bun install, copy .env.example to .env, add your Groq or OpenRouter key, then start with .\\run.ps1 for chat or npm run acp for editor integration.",
   },
   {
-    question: "Do I need design experience to use it?",
+    question: "Which LLM providers are supported?",
     answer:
-      "No. Describe what you want in plain language and the AI handles layout, styling, and variations. Designers can still fine-tune outputs when they want more control.",
+      "Use Groq locally with GROQ_API_KEY for interactive chat and tools. CodeCrafters submit mode uses OpenRouter, which is injected automatically when you submit the challenge.",
   },
   {
-    question: "Can I collaborate with my team?",
+    question: "What are the run modes?",
     answer:
-      "Yes. Share projects with teammates, leave feedback on iterations, and keep brand assets in a shared workspace so everyone stays aligned.",
+      "Three modes: interactive chat (TUI or --plain), single-prompt CodeCrafters submit (-p), and ACP server mode for editors like Zed to drive the agent over stdio.",
   },
   {
-    question: "Is it really free to use?",
+    question: "Is it free to use?",
     answer:
-      "You can start for free with a monthly generation allowance. Paid plans unlock higher limits, priority processing, and team features when you're ready to scale.",
+      "The CLI is open source. You bring your own API keys for Groq, OpenRouter, or optional search providers like Tavily or Brave—there is no hosted SaaS plan or usage gate in the project itself.",
   },
 ] as const;
 
@@ -70,6 +70,7 @@ export default function FaqSection() {
 
   return (
     <div
+      id="docs"
       className="absolute content-stretch flex flex-col gap-[76px] items-center left-[274px] top-[3694px] w-[891.995px]"
       data-name="FAQ-Section"
     >
@@ -79,7 +80,7 @@ export default function FaqSection() {
           <p>Questions</p>
         </div>
         <p className="font-['Sk-Modernist:Regular',sans-serif] text-[#d9d9d9] text-[20px] leading-[28.62px] max-w-[830px]">
-          {`Got questions? We've got answers. Find everything you need to know about using our platform, plans, and features.`}
+          {`Got questions about the CLI, tools, run modes, and setup? Here are the essentials.`}
         </p>
       </div>
 

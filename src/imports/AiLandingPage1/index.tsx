@@ -1,5 +1,6 @@
 import svgPaths from "./svg-3a59wk3hgj";
 import FaqSection from "@/components/FaqSection";
+import HeroSection from "@/components/landing/HeroSection";
 import LandingNav from "@/components/landing/LandingNav";
 import {
   PlanPeriodSuffix,
@@ -10,11 +11,6 @@ import {
 import ScrollCta from "@/components/landing/ScrollCta";
 import imgImage85 from "./af720a97be322b14c921af44c089732d20919580.png";
 import imgImage from "./eaa2237d00f3be218191babfee64f05f1c90a9b7.png";
-import imgMEibgBqwotHj35YaPhM5LjuLc2UPng from "./0dbfb64cea541f234838e2d67d277fcac4246437.png";
-import img2B9Gp2GJnBjBx44Yovd3HRxqiXmPng from "./b1c3a11bbd13626f10224433d362a7a8ec35b921.png";
-import imgB9Rol6BhEmArgbWauFiEj7UzzjyPng from "./04c78e17217053453e2c7825fa13acb383a43c81.png";
-import imgLFzmQ3NzC3Lg6Q2C7LvBf8KwPng from "./dc506b68d30c9f707ba2588bcbff6ffb9555eeec.png";
-import img38I07RfLj4Dxjrqz7YxCanY6KoPng from "./d65159acae19a81859707bbc212f514f23a03d79.png";
 import imgEllipse854 from "./9382e141d5529dd9db9db242f01dd2133f738bec.png";
 import imgImage2 from "./89f75248c238a9d4d3ca30db47675f6c6b8fa624.png";
 import imgImage3 from "./d7a2e300be1afb827238911bc33b493df0930bbf.png";
@@ -98,160 +94,7 @@ export default function AiLandingPage({ className }: { className?: string }) {
             </div>
           </div>
         </div>
-        <div id="home" className="absolute content-stretch flex flex-col gap-[27px] items-center left-[217px] top-[210.26px] w-[1005px]" data-name="HeroSection-Content">
-          <div className="bg-linear-to-r content-stretch flex from-[rgba(255,84,31,0.13)] gap-[13.196px] items-center px-[23.564px] py-[15.081px] relative rounded-[50.898px] shrink-0 to-[rgba(255,84,31,0.04)]">
-            <div aria-hidden className="absolute border-[0.943px] border-[rgba(255,255,255,0.15)] border-solid inset-0 pointer-events-none rounded-[50.898px]" />
-            <div className="h-[45.326px] relative shrink-0 w-[151.841px]" data-name="Container">
-              <div className="absolute inset-[2.27px_111.05px_2.27px_0] overflow-clip rounded-[1132.008px]" data-name="Container">
-                <div className="absolute inset-0 rounded-[1132.008px]" data-name="mEIBGBqwotHJ35YaPhM5ljuLc2U.png">
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[1132.008px]">
-                    <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgMEibgBqwotHj35YaPhM5LjuLc2UPng} />
-                  </div>
-                </div>
-                <div className="absolute border-[1.133px] border-[rgba(255,255,255,0.1)] border-solid inset-0 rounded-[1132.008px]" data-name="Border" />
-              </div>
-              <div className="absolute inset-[2.27px_83.85px_2.27px_27.2px] overflow-clip rounded-[1132.008px]" data-name="Container">
-                <div className="absolute inset-0 rounded-[1132.008px]" data-name="2B9gp2gJnBjBX44Yovd3HRxqiXM.png">
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[1132.008px]">
-                    <img alt="" className="absolute left-0 max-w-none size-full top-0" src={img2B9Gp2GJnBjBx44Yovd3HRxqiXmPng} />
-                  </div>
-                </div>
-                <div className="absolute border-[1.133px] border-[rgba(255,255,255,0.1)] border-solid inset-0 rounded-[1132.008px]" data-name="Border" />
-              </div>
-              <div className="absolute inset-[2.27px_56.65px_2.27px_54.39px] overflow-clip rounded-[1132.008px]" data-name="Container">
-                <div className="absolute inset-0 rounded-[1132.008px]" data-name="B9ROL6BhEMArgbWauFiEj7UZZJY.png">
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[1132.008px]">
-                    <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgB9Rol6BhEmArgbWauFiEj7UzzjyPng} />
-                  </div>
-                </div>
-                <div className="absolute border-[1.133px] border-[rgba(255,255,255,0.1)] border-solid inset-0 rounded-[1132.008px]" data-name="Border" />
-              </div>
-              <div className="absolute inset-[2.27px_27.2px_2.27px_83.85px] overflow-clip rounded-[1132.008px]" data-name="Container">
-                <div className="absolute inset-0 rounded-[1132.008px]" data-name="lFzmQ3NzC3LG6q2c7lvBf8kw.png">
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[1132.008px]">
-                    <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgLFzmQ3NzC3Lg6Q2C7LvBf8KwPng} />
-                  </div>
-                </div>
-                <div className="absolute border-[1.133px] border-[rgba(255,255,255,0.1)] border-solid inset-0 rounded-[1132.008px]" data-name="Border" />
-              </div>
-              <div className="absolute inset-[2.27px_0_2.27px_111.05px] overflow-clip rounded-[1132.008px]" data-name="Container">
-                <div className="absolute inset-0 rounded-[1132.008px]" data-name="38I07rfLJ4DXJRQZ7YXCanY6ko.png">
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[1132.008px]">
-                    <img alt="" className="absolute left-0 max-w-none size-full top-0" src={img38I07RfLj4Dxjrqz7YxCanY6KoPng} />
-                  </div>
-                </div>
-                <div className="absolute border-[1.133px] border-[rgba(255,255,255,0.1)] border-solid inset-0 rounded-[1132.008px]" data-name="Border" />
-              </div>
-            </div>
-            <div className="h-[42.142px] overflow-clip relative shrink-0 w-[141.835px]" data-name="Container">
-              <div className="absolute h-[15.864px] left-0 overflow-clip top-0 w-[83.852px]" data-name="Container">
-                <div className="absolute left-0 size-[15.864px] top-0" data-name="Image">
-                  <div className="absolute left-0 overflow-clip size-[15.864px] top-0" data-name="image fill">
-                    <div className="absolute left-0 size-[15.864px] top-0" data-name="image">
-                      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.864 15.864">
-                        <g id="image">
-                          <path d={svgPaths.p3460b00} fill="var(--fill-0, white)" fillOpacity="0.2" id="Vector" />
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute inset-[0_67.99px_0_0]" data-name="SVG">
-                  <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.864 15.864">
-                    <g id="svg-333977797_546">
-                      <path clipRule="evenodd" d={svgPaths.p3c59fb00} fill="var(--fill-0, #FF541F)" fillRule="evenodd" id="Vector" />
-                    </g>
-                  </svg>
-                </div>
-                <div className="absolute left-[17px] size-[15.864px] top-0" data-name="Image">
-                  <div className="absolute left-0 overflow-clip size-[15.864px] top-0" data-name="image fill">
-                    <div className="absolute left-0 size-[15.864px] top-0" data-name="image">
-                      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.864 15.864">
-                        <g id="image">
-                          <path d={svgPaths.p39143780} fill="var(--fill-0, white)" fillOpacity="0.2" id="Vector" />
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute inset-[0_50.99px_0_17px]" data-name="SVG">
-                  <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.864 15.864">
-                    <g id="svg-333977797_546">
-                      <path clipRule="evenodd" d={svgPaths.p3e33e300} fill="var(--fill-0, #FF541F)" fillRule="evenodd" id="Vector" />
-                    </g>
-                  </svg>
-                </div>
-                <div className="absolute left-[33.99px] size-[15.864px] top-0" data-name="Image">
-                  <div className="absolute left-0 overflow-clip size-[15.864px] top-0" data-name="image fill">
-                    <div className="absolute left-0 size-[15.864px] top-0" data-name="image">
-                      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.864 15.864">
-                        <g id="image">
-                          <path d={svgPaths.p3460b00} fill="var(--fill-0, white)" fillOpacity="0.2" id="Vector" />
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute inset-[0_34px_0_33.99px]" data-name="SVG">
-                  <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.864 15.864">
-                    <g id="svg-333977797_546">
-                      <path clipRule="evenodd" d={svgPaths.p3c59fb00} fill="var(--fill-0, #FF541F)" fillRule="evenodd" id="Vector" />
-                    </g>
-                  </svg>
-                </div>
-                <div className="absolute left-[50.99px] size-[15.864px] top-0" data-name="Image">
-                  <div className="absolute left-0 overflow-clip size-[15.864px] top-0" data-name="image fill">
-                    <div className="absolute left-0 size-[15.864px] top-0" data-name="image">
-                      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.864 15.864">
-                        <g id="image">
-                          <path d={svgPaths.p3460b00} fill="var(--fill-0, white)" fillOpacity="0.2" id="Vector" />
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute inset-[0_17px_0_50.99px]" data-name="SVG">
-                  <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.864 15.864">
-                    <g id="svg-333977797_546">
-                      <path clipRule="evenodd" d={svgPaths.p3c59fb00} fill="var(--fill-0, #FF541F)" fillRule="evenodd" id="Vector" />
-                    </g>
-                  </svg>
-                </div>
-                <div className="absolute left-[67.99px] size-[15.864px] top-0" data-name="Image">
-                  <div className="absolute left-0 overflow-clip size-[15.864px] top-0" data-name="image fill">
-                    <div className="absolute left-0 size-[15.864px] top-0" data-name="image">
-                      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.864 15.864">
-                        <g id="image">
-                          <path d={svgPaths.p3220de00} fill="var(--fill-0, white)" fillOpacity="0.2" id="Vector" />
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute inset-[0_0_0_67.99px]" data-name="SVG">
-                  <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.864 15.864">
-                    <g id="svg-333977797_546">
-                      <path clipRule="evenodd" d={svgPaths.p38c6e880} fill="var(--fill-0, #FF541F)" fillRule="evenodd" id="Vector" />
-                    </g>
-                  </svg>
-                </div>
-              </div>
-              <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] h-[22.663px] leading-[21.756px] left-0 not-italic text-[16.855px] text-[rgba(255,255,255,0.65)] top-[19.26px] tracking-[-0.3626px] w-[142.062px]">115+ happy clients</p>
-            </div>
-          </div>
-          <p className="[word-break:break-word] font-['Sk-Modernist:Bold',sans-serif] leading-0 min-w-full not-italic relative shrink-0 text-[80px] text-center text-white w-min">
-            <span className="leading-[88px]">{`Automate `}</span>
-            <span className="leading-[88px] text-[#ff541f]">Intelligence</span>
-            <span className="leading-[88px]">. Accelerate Growth.</span>
-          </p>
-          <p className="[word-break:break-word] font-['Sk-Modernist:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[22px] text-[rgba(255,255,255,0.7)] text-center w-[681px]">Our AI-powered SaaS platform empowers businesses to streamline operations, automate repetitive tasks, and make smarter, data-driven decisions—all from one intuitive dashboard.</p>
-          <div className="content-stretch flex gap-[23px] items-center relative shrink-0">
-            <ScrollCta target="pricing">Get Started</ScrollCta>
-            <ScrollCta target="services" variant="outline">
-              See Details
-            </ScrollCta>
-          </div>
-        </div>
+        <HeroSection />
       </div>
       <div className="-translate-x-1/2 -translate-y-1/2 absolute flex h-[1200.607px] items-center justify-center left-[calc(50%+458.27px)] top-[calc(50%-749.7px)] w-[1410.535px]">
         <div className="flex-none rotate-[-9.69deg]">
@@ -721,19 +564,19 @@ export default function AiLandingPage({ className }: { className?: string }) {
         </div>
       </div>
       <LandingNav />
-      <div className="-translate-x-1/2 absolute bg-linear-to-b from-[5.582%] from-[rgba(0,0,0,0)] h-[372px] left-1/2 to-1/2 to-black top-[692px] w-[1440px]" />
-      <div className="-translate-x-1/2 absolute border border-[rgba(255,255,255,0.1)] border-solid h-[214px] left-1/2 overflow-clip top-[758px] w-[1440px]" data-name="Stats">
+      <div className="-translate-x-1/2 absolute bg-linear-to-b from-[5.582%] from-[rgba(0,0,0,0)] h-[372px] left-1/2 to-1/2 to-black top-[729px] w-[1440px]" />
+      <div className="-translate-x-1/2 absolute border border-[rgba(255,255,255,0.1)] border-solid h-[214px] left-1/2 overflow-clip top-[795px] w-[1440px]" data-name="Stats">
         <div className="[word-break:break-word] absolute contents leading-[normal] left-[170px] not-italic text-center top-[59px]">
-          <p className="-translate-x-1/2 absolute font-['Sk-Modernist:Regular',sans-serif] left-[240px] text-[#ff541f] text-[23px] top-[60px] w-[138px]">Clients</p>
-          <p className="-translate-x-1/2 absolute font-['Sk-Modernist:Bold',sans-serif] left-[240.5px] text-[46px] text-white top-[101px] whitespace-nowrap">120K+</p>
+          <p className="-translate-x-1/2 absolute font-['Sk-Modernist:Regular',sans-serif] left-[240px] text-[#ff541f] text-[23px] top-[60px] w-[138px]">Tools</p>
+          <p className="-translate-x-1/2 absolute font-['Sk-Modernist:Bold',sans-serif] left-[240.5px] text-[46px] text-white top-[101px] whitespace-nowrap">8+</p>
         </div>
         <div className="[word-break:break-word] absolute contents leading-[normal] left-[1129px] not-italic text-center top-[59px] whitespace-nowrap">
-          <p className="-translate-x-1/2 absolute font-['Sk-Modernist:Regular',sans-serif] left-[1208.5px] text-[#ff541f] text-[23px] top-[60px]">5-Star Reviews</p>
-          <p className="-translate-x-1/2 absolute font-['Sk-Modernist:Bold',sans-serif] left-[1208px] text-[46px] text-white top-[101px]">32K+</p>
+          <p className="-translate-x-1/2 absolute font-['Sk-Modernist:Regular',sans-serif] left-[1208.5px] text-[#ff541f] text-[23px] top-[60px]">Run modes</p>
+          <p className="-translate-x-1/2 absolute font-['Sk-Modernist:Bold',sans-serif] left-[1208px] text-[46px] text-white top-[101px]">3</p>
         </div>
         <div className="[word-break:break-word] absolute contents leading-[normal] left-[667px] not-italic text-center top-[59px] whitespace-nowrap">
-          <p className="-translate-x-1/2 absolute font-['Sk-Modernist:Regular',sans-serif] left-[719px] text-[#ff541f] text-[23px] top-[60px]">Projects</p>
-          <p className="-translate-x-1/2 absolute font-['Sk-Modernist:Bold',sans-serif] left-[719.5px] text-[46px] text-white top-[101px]">150+</p>
+          <p className="-translate-x-1/2 absolute font-['Sk-Modernist:Regular',sans-serif] left-[719px] text-[#ff541f] text-[23px] top-[60px]">Protocols</p>
+          <p className="-translate-x-1/2 absolute font-['Sk-Modernist:Bold',sans-serif] left-[719.5px] text-[46px] text-white top-[101px] whitespace-nowrap">ACP</p>
         </div>
         <div className="-translate-y-1/2 absolute flex h-[134px] items-center justify-center left-[479px] top-1/2 w-0">
           <div className="-rotate-90 flex-none">
@@ -1245,23 +1088,23 @@ export default function AiLandingPage({ className }: { className?: string }) {
         </div>
       </div>
       <FaqSection />
-      <div id="services" className="-translate-x-1/2 -translate-y-1/2 absolute h-[674px] left-1/2 overflow-visible top-[calc(50%-1425px)] w-[1200px]" data-name="Features-Section">
+      <div id="services" className="-translate-x-1/2 -translate-y-1/2 absolute h-[674px] left-1/2 overflow-visible top-[calc(50%-1385px)] w-[1200px]" data-name="Features-Section">
         <div className="absolute h-[280px] left-0 overflow-visible right-[520px] top-0" data-name="Container">
           <div className="absolute h-[211px] left-0 right-0 top-0" data-name="Heading 2">
             <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[70.4px] left-0 not-italic text-[64px] text-white top-0 w-[675.81px]">
-              <span>{`Designed for Designers. Powered by `}</span>
+              <span>{`Built for the terminal. Powered by `}</span>
               <span className="font-['Sk-Modernist:Bold',sans-serif] text-[#ff541f]">AI</span>
               <span>.</span>
             </p>
           </div>
           <div className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[21.6px] left-0 not-italic text-[18px] text-[rgba(255,255,255,0.85)] top-[230px] w-[661px] whitespace-pre-wrap">
-            <p className="mb-0">{`Unlock the full potential of your creativity with our AI-powered design assistant. `}</p>
-            <p>Explore new dimensions of design.</p>
+            <p className="mb-0">{`Agent loop with tool calling, LSP intelligence, and editor integration.`}</p>
+            <p>Read, write, bash, and ship from one CLI.</p>
           </div>
         </div>
         <div className="absolute h-[668px] left-0 overflow-clip right-0 top-[320px]" data-name="Container">
           <div className="absolute h-[199px] left-0 overflow-clip right-[732px] rounded-[20px] top-0" style={{ backgroundImage: "linear-gradient(142.853deg, rgba(0, 0, 0, 0) 23.339%, rgba(255, 60, 0, 0.3) 96.361%), linear-gradient(90deg, rgba(39, 40, 41, 0.7) 0%, rgba(39, 40, 41, 0.7) 100%)" }} data-name="Link">
-            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[19.2px] left-[20px] not-italic text-[18px] text-[rgba(217,217,217,0.85)] top-[19px] w-[354.42px]">Skip the blank canvas and spark creativity instantly. Our AI generates high-quality, on-brand design concepts within seconds</p>
+            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[19.2px] left-[20px] not-italic text-[18px] text-[rgba(217,217,217,0.85)] top-[19px] w-[354.42px]">Inspect and modify project files with Read, Write, and Edit tools—complete with review prompts before changes land.</p>
             <div className="absolute flex items-center justify-center right-[9.64px] size-[70.715px] top-[13.42px]">
               <div className="-rotate-45 flex-none">
                 <div className="bg-[#ff541f] h-[50px] overflow-clip relative rounded-[333px] w-[50.007px]" data-name="Background">
@@ -1286,10 +1129,10 @@ export default function AiLandingPage({ className }: { className?: string }) {
                 </div>
               </div>
             </div>
-            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[40.8px] left-[20px] not-italic text-[34px] text-white top-[124.2px] whitespace-nowrap">Instant Ideation</p>
+            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[40.8px] left-[20px] not-italic text-[34px] text-white top-[124.2px] whitespace-nowrap">Read & Write</p>
           </div>
           <div className="absolute bg-[rgba(39,40,41,0.7)] border-[1.25px] border-[rgba(255,84,31,0.2)] border-solid h-[199px] left-[488px] overflow-clip right-0 rounded-[20px] top-0" data-name="Link">
-            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[19.2px] left-[18.75px] not-italic text-[18px] text-[rgba(217,217,217,0.85)] top-[17.75px] w-[448.03px]">No two creators are the same, and neither are their styles. Our AI learns from your inputs, understands your aesthetic preferences, and fine-tunes every design</p>
+            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[19.2px] left-[18.75px] not-italic text-[18px] text-[rgba(217,217,217,0.85)] top-[17.75px] w-[448.03px]">Run shell commands in your repo with the Bash tool—ideal for tests, builds, git status, and quick diagnostics.</p>
             <div className="absolute flex items-center justify-center right-[8.39px] size-[70.715px] top-[12.17px]">
               <div className="-rotate-45 flex-none">
                 <div className="bg-[#ff541f] h-[50px] overflow-clip relative rounded-[333px] w-[50.007px]" data-name="Background">
@@ -1314,10 +1157,10 @@ export default function AiLandingPage({ className }: { className?: string }) {
                 </div>
               </div>
             </div>
-            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[40.8px] left-[18.75px] not-italic text-[34px] text-white top-[122.95px] whitespace-nowrap">Smart Adaptability</p>
+            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[40.8px] left-[18.75px] not-italic text-[34px] text-white top-[122.95px] whitespace-nowrap">Bash execution</p>
           </div>
           <div className="absolute bg-[rgba(39,40,41,0.7)] border-[1.25px] border-[rgba(255,84,31,0.2)] border-solid h-[199px] left-0 overflow-clip right-[488px] rounded-[20px] top-[219px]" data-name="Link">
-            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[19.2px] left-[18.75px] not-italic text-[18px] text-[rgba(217,217,217,0.85)] top-[17.75px] w-[452.83px]">Design once, export anywhere. Whether you need high-res graphics for print, responsive visuals for the web, mobile-optimized assets,</p>
+            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[19.2px] left-[18.75px] not-italic text-[18px] text-[rgba(217,217,217,0.85)] top-[17.75px] w-[452.83px]">Go to definitions, find references, and pull TypeScript diagnostics without leaving the terminal session.</p>
             <div className="absolute flex items-center justify-center right-[8.39px] size-[70.715px] top-[12.17px]">
               <div className="-rotate-45 flex-none">
                 <div className="bg-[#ff541f] h-[50px] overflow-clip relative rounded-[333px] w-[50.007px]" data-name="Background">
@@ -1342,10 +1185,10 @@ export default function AiLandingPage({ className }: { className?: string }) {
                 </div>
               </div>
             </div>
-            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[40.8px] left-[18.75px] not-italic text-[34px] text-white top-[122.95px] whitespace-nowrap">Multi-Format Export</p>
+            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[40.8px] left-[18.75px] not-italic text-[34px] text-white top-[122.95px] whitespace-nowrap">LSP intelligence</p>
           </div>
           <div className="absolute h-[199px] left-[732px] overflow-clip right-0 rounded-[20px] top-[219px]" style={{ backgroundImage: "linear-gradient(142.853deg, rgba(0, 0, 0, 0) 23.339%, rgba(255, 60, 0, 0.3) 96.361%), linear-gradient(90deg, rgba(39, 40, 41, 0.7) 0%, rgba(39, 40, 41, 0.7) 100%)" }} data-name="Link">
-            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[19.2px] left-[20px] not-italic text-[18px] text-[rgba(217,217,217,0.85)] top-[19px] w-[327.36px]">Say goodbye to repetitive tweaks and endless back-and-forths. With intuitive prompt-based editing</p>
+            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[19.2px] left-[20px] not-italic text-[18px] text-[rgba(217,217,217,0.85)] top-[19px] w-[327.36px]">Speak ACP over stdio for Zed and other editors, or load MCP servers for extra tools in chat mode.</p>
             <div className="absolute flex items-center justify-center right-[9.64px] size-[70.715px] top-[13.42px]">
               <div className="-rotate-45 flex-none">
                 <div className="bg-[#ff541f] h-[50px] overflow-clip relative rounded-[333px] w-[50.007px]" data-name="Background">
@@ -1370,7 +1213,7 @@ export default function AiLandingPage({ className }: { className?: string }) {
                 </div>
               </div>
             </div>
-            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[40.8px] left-[20px] not-italic text-[34px] text-white top-[124.2px] whitespace-nowrap">Seamless Revisions</p>
+            <p className="[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] leading-[40.8px] left-[20px] not-italic text-[34px] text-white top-[124.2px] whitespace-nowrap">ACP & MCP</p>
           </div>
         </div>
         <div className="absolute flex inset-[-2.37%_9.99%_70.16%_71.92%] items-center justify-center overflow-visible" style={{ containerType: "size" }}>
@@ -1387,20 +1230,20 @@ export default function AiLandingPage({ className }: { className?: string }) {
           </div>
         </div>
       </div>
-      <div id="about" className="absolute content-stretch flex flex-col gap-[49px] items-center left-[110px] top-[1807px] w-[1244.998px]" data-name="Numbers & Stats-Section">
-        <div className="[word-break:break-word] content-stretch flex gap-[27px] h-[180px] items-start not-italic relative shrink-0 text-white" data-name="Numbers & Stats-Content">
-          <p className="font-['Sk-Modernist:Regular',sans-serif] leading-[39.7px] opacity-60 relative shrink-0 text-[16px] tracking-[-0.48px] whitespace-nowrap">2025</p>
-          <p className="font-['Sk-Modernist:Bold',sans-serif] h-[149.213px] leading-[39.169px] relative shrink-0 text-[27.978px] tracking-[-0.8393px] w-[811.348px]">
-            {`Whether you're designing for personal projects, creative teams, or large-scale campaigns, our AI-powered platform is built to bring your ideas to life—quickly, beautifully, and intelligently.`}
+      <div id="about" className="absolute content-stretch flex flex-col gap-[49px] items-center left-[110px] top-[1950px] w-[1244.998px]" data-name="Numbers & Stats-Section">
+        <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start not-italic relative shrink-0 text-white w-[900px]" data-name="Numbers & Stats-Content">
+          <p className="font-['Sk-Modernist:Regular',sans-serif] leading-[39.7px] opacity-60 text-[16px] tracking-[-0.48px]">About LLM Claude</p>
+          <p className="font-['Sk-Modernist:Bold',sans-serif] leading-[39.169px] text-[27.978px] tracking-[-0.8393px]">
+            {`Whether you're completing the CodeCrafters challenge, hacking locally, or wiring an editor over ACP—this CLI keeps the agent loop small, inspectable, and tool-driven.`}
             <br aria-hidden />
-            And the results? The numbers speak for themselves:
+            Here is what you get out of the box:
           </p>
         </div>
         <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-0 place-items-start relative shrink-0">
           <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 place-items-start relative row-1" data-name="01years">
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[29.843px] ml-[1.86px] mt-[84.86px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">Year of establishment</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[20.517px] ml-[2.8px] mt-[118.44px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">More than 10 years in the field</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">2014</p>
+            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[29.843px] ml-[1.86px] mt-[84.86px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">Built-in tools</p>
+            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[20.517px] ml-[2.8px] mt-[118.44px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">Read, Write, Bash, LSP, search, and more</p>
+            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">8+</p>
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[2.8px] mt-[128.7px] place-items-start relative row-1" data-name="images">
               <div className="col-1 flex h-[91.393px] items-center justify-center ml-[96.06px] mt-0 relative row-1 w-[193.978px]">
                 <div className="-scale-y-100 flex-none">
@@ -1451,9 +1294,9 @@ export default function AiLandingPage({ className }: { className?: string }) {
             </div>
           </div>
           <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[318.01px] mt-[83.93px] place-items-start relative row-1" data-name="02projects">
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[29.843px] ml-[1.86px] mt-[83px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">Projects are launched</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[20.517px] ml-[2.8px] mt-[118.44px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">A lot of projects are done</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">304</p>
+            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[29.843px] ml-[1.86px] mt-[83px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">Run modes</p>
+            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[20.517px] ml-[2.8px] mt-[118.44px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">Chat, CodeCrafters submit, and ACP</p>
+            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">3</p>
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[2.8px] mt-[162.27px] place-items-start relative row-1" data-name="images">
               <div className="col-1 h-[93.258px] ml-[49.43px] mt-0 relative row-1 w-[239.674px]" data-name="decor1">
                 <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 239.674 93.2585">
@@ -1501,9 +1344,9 @@ export default function AiLandingPage({ className }: { className?: string }) {
             </div>
           </div>
           <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[636.02px] mt-0 place-items-start relative row-1" data-name="03clients">
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[29.843px] ml-[1.86px] mt-[84.86px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">Clients are satisfied</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[20.517px] ml-[2.8px] mt-[118.44px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">These people love us</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">189</p>
+            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[29.843px] ml-[1.86px] mt-[84.86px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">TypeScript codebase</p>
+            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[20.517px] ml-[2.8px] mt-[118.44px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">Compiler API for LSP tools</p>
+            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">98%</p>
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[2.8px] mt-[127.76px] place-items-start relative row-1" data-name="images">
               <div className="col-1 h-[93.258px] ml-[49.43px] mt-0 relative row-1 w-[238.742px]" data-name="decor1">
                 <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 238.742 93.2585">
@@ -1551,9 +1394,9 @@ export default function AiLandingPage({ className }: { className?: string }) {
             </div>
           </div>
           <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[953.1px] mt-[83.93px] place-items-start relative row-1" data-name="04inwork">
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[29.843px] ml-[1.86px] mt-[82.07px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">Projects in work</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[20.517px] ml-[2.8px] mt-[117.51px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">What we do right now</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">12</p>
+            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[29.843px] ml-[1.86px] mt-[82.07px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">Open source</p>
+            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[20.517px] ml-[2.8px] mt-[117.51px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">Clone and run locally today</p>
+            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">OSS</p>
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[2.8px] mt-[162.27px] place-items-start relative row-1">
               <div className="col-1 h-[93.258px] ml-[49.43px] mt-0 relative row-1 w-[239.674px]" data-name="decor1">
                 <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 239.674 93.2585">
@@ -1605,86 +1448,69 @@ export default function AiLandingPage({ className }: { className?: string }) {
             </div>
           </div>
         </div>
-        <div className="content-stretch flex gap-[30px] items-center relative shrink-0">
-          <ScrollCta target="pricing" variant="primary-with-arrow">
-            Get Started
-          </ScrollCta>
-          <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-0 place-items-start relative shrink-0" data-name="button">
-            <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 place-items-start relative row-1" data-name="availiable">
-              <div className="col-1 content-stretch flex items-center justify-between ml-0 mt-0 relative row-1 w-[140.707px]">
-                <p className="[word-break:break-word] font-['Sk-Modernist:Regular',sans-serif] leading-[18.652px] not-italic opacity-60 relative shrink-0 text-[16.06px] text-white tracking-[-0.4818px] whitespace-nowrap">Slots are available</p>
-                <div className="relative shrink-0 size-[7.461px]">
-                  <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 7.46067 7.46067">
-                    <circle cx="3.73034" cy="3.73034" fill="var(--fill-0, #0AC300)" id="Ellipse 14" r="3.73034" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <div id="contact" className="-translate-x-1/2 absolute bg-[rgba(255,255,255,0.06)] content-stretch flex flex-col h-[500px] items-start left-1/2 px-[101px] py-[66px] top-[5134px] w-[1440px]" data-name="Footer">
         <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-0 place-items-start relative shrink-0" data-name="Footer-Content">
           <div className="[word-break:break-word] col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 not-italic place-items-start relative row-1">
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 place-items-start relative row-1" data-name="Content 1">
-              <p className="col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[1.3] ml-0 mt-0 relative row-1 text-[32px] text-white tracking-[-0.9545px] whitespace-nowrap">About Us</p>
-              <p className="col-1 font-['Sk-Modernist:Regular',sans-serif] leading-normal ml-0 mt-[63px] relative row-1 text-[#bcbcbc] text-[18px] w-[307.341px]">We’re a team of designers, engineers, and innovators building AI tools that empower anyone to turn imagination into stunning visuals—faster, smarter, and effortlessly.</p>
+              <p className="col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[1.3] ml-0 mt-0 relative row-1 text-[32px] text-white tracking-[-0.9545px] whitespace-nowrap">LLM Claude</p>
+              <p className="col-1 font-['Sk-Modernist:Regular',sans-serif] leading-normal ml-0 mt-[63px] relative row-1 text-[#bcbcbc] text-[18px] w-[307.341px]">Open-source terminal agent for the CodeCrafters challenge—TypeScript, Bun, tool calling, LSP intelligence, ACP editor support, and optional MCP servers.</p>
             </div>
             <div className="col-1 content-stretch flex flex-col gap-[22.907px] items-start ml-[450.51px] mt-0 relative row-1 whitespace-nowrap" data-name="Content 2">
               <div className="flex flex-col font-['Sk-Modernist:Bold',sans-serif] justify-center relative shrink-0 text-[#ff541f] text-[24px] tracking-[-0.4772px]">
-                <p className="leading-[1.4]">Useful Links</p>
+                <p className="leading-[1.4]">Project</p>
               </div>
               <div className="content-stretch flex flex-col font-['Sk-Modernist:Regular',sans-serif] gap-[15.272px] items-start relative shrink-0 text-[#bcbcbc] text-[18px]" data-name="List">
                 <div className="flex flex-col justify-center relative shrink-0">
-                  <p className="leading-normal">About</p>
+                  <p className="leading-normal">GitHub repo</p>
                 </div>
                 <div className="flex flex-col justify-center relative shrink-0">
-                  <p className="leading-normal">Services</p>
+                  <p className="leading-normal">Tools</p>
                 </div>
                 <div className="flex flex-col justify-center relative shrink-0">
-                  <p className="leading-normal">Team</p>
+                  <p className="leading-normal">Run modes</p>
                 </div>
                 <div className="flex flex-col justify-center relative shrink-0">
-                  <p className="leading-normal">Prices</p>
+                  <p className="leading-normal">FAQ</p>
                 </div>
               </div>
             </div>
             <div className="col-1 content-stretch flex flex-col gap-[22.907px] items-start ml-[730.17px] mt-0 relative row-1 whitespace-nowrap" data-name="Content 4">
               <div className="flex flex-col font-['Sk-Modernist:Bold',sans-serif] justify-center relative shrink-0 text-[#ff541f] text-[24px] tracking-[-0.4772px]">
-                <p className="leading-[1.4]">Help</p>
+                <p className="leading-[1.4]">Docs</p>
               </div>
               <div className="content-stretch flex flex-col font-['Sk-Modernist:Regular',sans-serif] gap-[15.272px] items-start relative shrink-0 text-[#bcbcbc] text-[18px]" data-name="List">
                 <div className="flex flex-col justify-center relative shrink-0">
-                  <p className="leading-normal">Customer Support</p>
+                  <p className="leading-normal">Local setup</p>
                 </div>
                 <div className="flex flex-col justify-center relative shrink-0">
-                  <p className="leading-normal">{`Terms & Conditions`}</p>
+                  <p className="leading-normal">Environment vars</p>
                 </div>
                 <div className="flex flex-col justify-center relative shrink-0">
-                  <p className="leading-normal">Privacy Policy</p>
+                  <p className="leading-normal">CodeCrafters submit</p>
                 </div>
                 <div className="flex flex-col justify-center relative shrink-0">
-                  <p className="leading-normal">Contact Us</p>
+                  <p className="leading-normal">MCP config</p>
                 </div>
               </div>
             </div>
             <div className="col-1 content-stretch flex flex-col gap-[22.907px] items-start ml-[1041.33px] mt-0 relative row-1 whitespace-nowrap" data-name="Content 3">
               <div className="flex flex-col font-['Sk-Modernist:Bold',sans-serif] justify-center relative shrink-0 text-[#ff541f] text-[24px] tracking-[-0.4772px]">
-                <p className="leading-[1.4]">Connect With Us</p>
+                <p className="leading-[1.4]">Source</p>
               </div>
               <div className="content-stretch flex flex-col font-['Sk-Modernist:Regular',sans-serif] gap-[22.907px] items-start relative shrink-0 text-[#bcbcbc] text-[18px]" data-name="List">
                 <div className="flex flex-col justify-center relative shrink-0">
                   <p className="leading-normal">
-                    27 Division St, New York,
+                    github.com/acheronx0577/
                     <br aria-hidden />
-                    NY 10002, USA
+                    LLM-Claude
                   </p>
                 </div>
                 <div className="flex flex-col justify-center relative shrink-0">
-                  <p className="leading-normal">+123 324 2653</p>
+                  <p className="leading-normal">TypeScript · Bun · ACP</p>
                 </div>
                 <div className="flex flex-col justify-center relative shrink-0">
-                  <p className="leading-normal">username@mail.com</p>
+                  <p className="leading-normal">Open source</p>
                 </div>
               </div>
             </div>
@@ -1751,7 +1577,7 @@ export default function AiLandingPage({ className }: { className?: string }) {
                 <div aria-hidden className="absolute border-[#ff541f] border-[0.954px] border-solid inset-0 pointer-events-none rounded-[95.448px]" />
               </div>
             </div>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-normal ml-0 mt-[3.8px] not-italic relative row-1 text-[18px] text-white whitespace-nowrap">© 2024 All Right Reserved.</p>
+            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-normal ml-0 mt-[3.8px] not-italic relative row-1 text-[18px] text-white whitespace-nowrap">© 2026 LLM Claude. Open source.</p>
           </div>
         </div>
       </div>
@@ -1770,10 +1596,10 @@ export default function AiLandingPage({ className }: { className?: string }) {
             </div>
           </div>
           <div className="content-stretch flex flex-col gap-[35px] items-center relative shrink-0 w-[745px]">
-            <p className="[word-break:break-word] font-['Sk-Modernist:Bold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[64px] text-center text-white w-[789px]">Ready to Design Smarter?</p>
-            <p className="[word-break:break-word] font-['Sk-Modernist:Regular',sans-serif] leading-[22.4px] not-italic relative shrink-0 text-[20px] text-[rgba(255,255,255,0.8)] text-center w-[618px]">{`Whether you're a freelancer, a team, or a growing agency—our tools adapt to your workflow. Design faster. Deliver better.`}</p>
-            <ScrollCta target="pricing" variant="primary-with-arrow">
-              Get Started
+            <p className="[word-break:break-word] font-['Sk-Modernist:Bold',sans-serif] leading-[normal] not-italic relative shrink-0 text-[64px] text-center text-white w-[789px]">Ready to run it locally?</p>
+            <p className="[word-break:break-word] font-['Sk-Modernist:Regular',sans-serif] leading-[22.4px] not-italic relative shrink-0 text-[20px] text-[rgba(255,255,255,0.8)] text-center w-[618px]">{`Clone the repo, add your API key, and start chatting in the terminal—or wire it into your editor over ACP.`}</p>
+            <ScrollCta target="home" variant="primary-with-arrow">
+              Clone the repo
             </ScrollCta>
           </div>
         </div>

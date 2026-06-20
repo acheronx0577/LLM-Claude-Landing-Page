@@ -10,26 +10,33 @@ export default function App() {
   const [scale, setScale] = useState(1);
 
   useEffect(() => {
-    const update = () => setScale(window.innerWidth / DESIGN_WIDTH);
+    const update = () => {
+      setScale(Math.min(window.innerWidth / DESIGN_WIDTH, 1));
+    };
     update();
     window.addEventListener("resize", update);
     return () => window.removeEventListener("resize", update);
   }, []);
 
   return (
-    <div
-      className="w-full max-w-[100vw] overflow-hidden"
-      style={{ height: DESIGN_HEIGHT * scale, background: "#010101" }}
-    >
+    <div className="w-full max-w-[100vw] overflow-hidden" style={{ background: "#010101" }}>
       <div
+        className="mx-auto"
         style={{
-          width: DESIGN_WIDTH,
-          height: DESIGN_HEIGHT,
-          transformOrigin: "top left",
-          transform: `scale(${scale})`,
+          width: DESIGN_WIDTH * scale,
+          height: DESIGN_HEIGHT * scale,
         }}
       >
-        <AiLandingPage />
+        <div
+          style={{
+            width: DESIGN_WIDTH,
+            height: DESIGN_HEIGHT,
+            transformOrigin: "top left",
+            transform: `scale(${scale})`,
+          }}
+        >
+          <AiLandingPage />
+        </div>
       </div>
     </div>
   );

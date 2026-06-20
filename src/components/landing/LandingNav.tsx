@@ -1,14 +1,16 @@
 "use client";
 
+import { LLM_CLAUDE_REPO } from "@/components/landing/CliInstallBox";
 import { useSmoothScrollTo } from "@/hooks/useSmoothScrollTo";
 import svgPaths from "@/imports/AiLandingPage1/svg-3a59wk3hgj";
 import { useState } from "react";
 
 const NAV_ITEMS = [
   { id: "home", label: "Home" },
-  { id: "services", label: "Services" },
-  { id: "contact", label: "Contact us" },
-  { id: "about", label: "About us" },
+  { id: "services", label: "Tools" },
+  { id: "about", label: "About" },
+  { id: "docs", label: "Docs" },
+  { id: "contact", label: "Contact" },
 ] as const;
 
 type NavId = (typeof NAV_ITEMS)[number]["id"];
@@ -24,7 +26,7 @@ export default function LandingNav() {
 
   return (
     <div
-      className="-translate-x-1/2 absolute content-stretch flex gap-[244px] items-center left-1/2 top-[50px] z-20"
+      className="-translate-x-1/2 absolute content-stretch flex gap-[180px] items-center left-1/2 top-[50px] z-20"
       data-name="Navigation"
     >
       <button
@@ -53,7 +55,7 @@ export default function LandingNav() {
       </button>
 
       <div
-        className="content-stretch flex gap-[65px] items-start relative shrink-0"
+        className="content-stretch flex gap-[48px] items-start relative shrink-0"
         data-name="Nav-Links"
         role="navigation"
         aria-label="Primary"
@@ -85,16 +87,17 @@ export default function LandingNav() {
         })}
       </div>
 
-      <button
-        type="button"
-        onClick={() => scrollTo("pricing")}
-        className="bg-[#ff541f] content-stretch flex items-center justify-center overflow-clip px-[35px] py-[15px] relative rounded-[10px] shrink-0 cursor-pointer transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:scale-100 motion-reduce:active:scale-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+      <a
+        href={LLM_CLAUDE_REPO.replace(/\.git$/, "")}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-[#ff541f] content-stretch flex items-center justify-center overflow-clip px-[35px] py-[15px] relative rounded-[10px] shrink-0 cursor-pointer transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:scale-100 motion-reduce:active:scale-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white no-underline"
         data-name="Link"
       >
         <span className="font-['Sk-Modernist:Bold',sans-serif] text-[20px] text-white leading-[19.2px]">
-          Login
+          GitHub
         </span>
-      </button>
+      </a>
     </div>
   );
 }

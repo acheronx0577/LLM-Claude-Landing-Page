@@ -4,9 +4,9 @@ import "lenis/dist/lenis.css";
 import "@/styles/index.css";
 
 export const metadata: Metadata = {
-  title: "Automate Intelligence. Accelerate Growth.",
+  title: "LLM Claude — Terminal AI Coding Assistant",
   description:
-    "AI-powered SaaS platform to streamline operations, automate tasks, and make smarter data-driven decisions.",
+    "Open-source CLI for AI-assisted coding with Read, Write, Bash, LSP tools, and ACP editor integration.",
 };
 
 export default function RootLayout({
