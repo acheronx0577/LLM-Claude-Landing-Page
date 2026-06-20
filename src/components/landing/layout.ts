@@ -1,8 +1,9 @@
 export const HERO_STATS_TOP = 1395;
 export const HERO_STATS_FADE_TOP = 1325;
+export const HERO_STATS_FADE_HEIGHT = 372;
 
-/** Orange dot field — hero only (fixed top; do not use %). */
-export const DOTS_TOP = 950;
+/** Orange dot field — below hero/stats (fixed top; do not use %). */
+export const DOTS_TOP = 1820;
 
 /** Features block — fixed tops (do not use %; page height changes). */
 export const FEATURES_SECTION_TOP = 1788;
@@ -49,6 +50,16 @@ export const DESIGN_PAGE_HEIGHT =
   SECTION_FOOTER_TOP + FOOTER_BLOCK_HEIGHT;
 
 export const DESIGN_WIDTH = 1440;
+
+/** Nav inset from viewport top (design canvas px). */
+export const NAV_TOP = 24;
+export const NAV_BAND_HEIGHT = NAV_TOP + 72;
+/** Scrim extends below nav links for a soft fade into the hero. */
+export const NAV_SCRIM_HEIGHT = 168;
+
+/** Hero UI under this marker pauses galaxy mouse repulsion while hovered. */
+const HERO_GALAXY_MOUSE_BLOCK = "data-hero-galaxy-block";
+export const HERO_GALAXY_MOUSE_BLOCK_SELECTOR = `[${HERO_GALAXY_MOUSE_BLOCK}]`;
 
 /** Full-bleed background bands (design canvas coordinates). */
 export const PRICING_BG_WIDTH = 1483;

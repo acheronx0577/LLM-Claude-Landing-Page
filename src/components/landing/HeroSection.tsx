@@ -8,7 +8,8 @@ export default function HeroSection() {
   return (
     <div
       id="home"
-      className="absolute content-stretch flex flex-col gap-[22px] items-center left-[217px] top-[195px] w-[1005px] pb-[8px]"
+      data-hero-galaxy-block
+      className="absolute content-stretch flex flex-col gap-[22px] items-center left-[217px] top-[195px] w-[1005px] pb-[8px] z-1"
       data-name="HeroSection-Content"
     >
       <div className="bg-linear-to-r content-stretch flex from-[rgba(255,84,31,0.13)] items-center justify-center px-[24px] py-[10px] relative rounded-[50.898px] shrink-0 to-[rgba(255,84,31,0.04)]">

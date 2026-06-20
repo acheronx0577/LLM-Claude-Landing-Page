@@ -10,7 +10,7 @@ import {
 export default function HeroDotsField() {
   return (
     <div
-      className="pointer-events-none absolute left-[calc(50%+458.27px)] flex h-[1200.607px] w-[1410.535px] -translate-x-1/2 -translate-y-1/2 items-center justify-center"
+      className="pointer-events-none absolute left-[calc(50%+458.27px)] flex h-[1200.607px] w-[1410.535px] -translate-x-1/2 items-start justify-center"
       style={{ top: DOTS_TOP }}
       aria-hidden
     >

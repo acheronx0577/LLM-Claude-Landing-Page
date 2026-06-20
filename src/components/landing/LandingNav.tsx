@@ -1,5 +1,6 @@
 "use client";
 
+import { NAV_TOP } from "@/components/landing/layout";
 import { LLM_CLAUDE_REPO } from "@/components/landing/CliInstallBox";
 import { useSmoothScrollTo } from "@/hooks/useSmoothScrollTo";
 import svgPaths from "@/imports/AiLandingPage1/svg-3a59wk3hgj";
@@ -26,7 +27,8 @@ export default function LandingNav() {
 
   return (
     <div
-      className="-translate-x-1/2 absolute content-stretch flex gap-[180px] items-center left-1/2 top-[50px] z-20"
+      className="-translate-x-1/2 absolute content-stretch flex gap-[180px] items-center left-1/2 z-20"
+      style={{ top: NAV_TOP }}
       data-name="Navigation"
     >
       <button

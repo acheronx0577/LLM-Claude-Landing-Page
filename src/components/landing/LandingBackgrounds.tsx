@@ -12,12 +12,30 @@ import {
   PRICING_BG_WIDTH,
   PRICING_FADE_HEIGHT,
   PRICING_FADE_TOP,
+  SECTION_CTA_TOP,
 } from "@/components/landing/layout";
 import imgEllipse854 from "@/imports/AiLandingPage1/9382e141d5529dd9db9db242f01dd2133f738bec.png";
 import imgImage85 from "@/imports/AiLandingPage1/af720a97be322b14c921af44c089732d20919580.png";
 
 function scaled(scale: number, value: number) {
   return value * scale;
+}
+
+/** Fade diagonal FAQ glows out before the CTA band (design canvas y). */
+function diagonalGlowMask(top: number, height: number, fadeEnd = SECTION_CTA_TOP - 40) {
+  const fadeStart = fadeEnd - 360;
+  const startPct = Math.max(0, Math.min(100, ((fadeStart - top) / height) * 100));
+  const endPct = Math.max(0, Math.min(100, ((fadeEnd - top) / height) * 100));
+
+  if (endPct <= 0) {
+    return undefined;
+  }
+
+  if (startPct >= endPct) {
+    return "linear-gradient(to bottom, transparent 0%, transparent 100%)";
+  }
+
+  return `linear-gradient(to bottom, black 0%, black ${startPct}%, transparent ${endPct}%)`;
 }
 
 function DiagonalGlow({
@@ -33,10 +51,17 @@ function DiagonalGlow({
   gradientId: string;
   x2: number;
 }) {
+  const maskImage = diagonalGlowMask(top, height);
+
   return (
     <div
       className="absolute left-1/2 flex w-screen -translate-x-1/2 items-center justify-center overflow-hidden"
-      style={{ top: scaled(scale, top), height: scaled(scale, height) }}
+      style={{
+        top: scaled(scale, top),
+        height: scaled(scale, height),
+        maskImage,
+        WebkitMaskImage: maskImage,
+      }}
     >
       <div className="w-[140%] max-w-none rotate-42">
         <svg

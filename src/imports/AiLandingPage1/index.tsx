@@ -5,14 +5,12 @@ import FeaturesSection from "@/components/landing/FeaturesSection";
 import HeroDotsField from "@/components/landing/HeroDotsField";
 import HeroSection from "@/components/landing/HeroSection";
 import HeroStatsBar from "@/components/landing/HeroStatsBar";
-import LandingNav from "@/components/landing/LandingNav";
 import PricingSection from "@/components/landing/PricingSection";
 import {
   DESIGN_CANVAS_HEIGHT,
   HERO_STATS_FADE_TOP,
   SECTION_ABOUT_TOP,
 } from "@/components/landing/layout";
-import imgImage85 from "./af720a97be322b14c921af44c089732d20919580.png";
 import imgImage from "./eaa2237d00f3be218191babfee64f05f1c90a9b7.png";
 import imgImage2 from "./89f75248c238a9d4d3ca30db47675f6c6b8fa624.png";
 import imgImage3 from "./d7a2e300be1afb827238911bc33b493df0930bbf.png";
@@ -39,26 +37,7 @@ export default function AiLandingPage({ className }: { className?: string }) {
       data-name="AI Landing Page 1"
     >
       <div className="absolute contents left-[-289px] top-[-239px]" data-name="Hero-Section">
-        <div className="-translate-x-1/2 absolute contents left-[calc(50%+429.46px)] top-[-239px]">
-          <div className="-translate-x-1/2 absolute flex h-[1223.643px] items-center justify-center left-[calc(50%+906.96px)] top-[-239px] w-[1921.91px]">
-            <div className="-rotate-90 -scale-y-100 flex-none">
-              <div className="h-[1921.91px] relative w-[1223.643px]" data-name="image 85">
-                <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage85} />
-              </div>
-            </div>
-          </div>
-          <div className="-translate-x-1/2 absolute flex h-[1223.643px] items-center justify-center left-[calc(50%-531.45px)] top-[-239px] w-[955.09px]">
-            <div className="-rotate-90 flex-none">
-              <div className="h-[955.09px] relative w-[1223.643px]" data-name="image 87">
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <img alt="" className="absolute h-[211.13%] left-0 max-w-none top-[-106.18%] w-full" src={imgImage85} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="absolute contents left-[41px] top-[-16px]">
-          <div className="absolute contents left-[41px] top-[-16px]">
             <div className="absolute h-[481px] left-[240px] opacity-35 top-[119px] w-[319px]" data-name="image">
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgImage} />
@@ -98,11 +77,9 @@ export default function AiLandingPage({ className }: { className?: string }) {
               </div>
             </div>
           </div>
-        </div>
         <HeroSection />
       </div>
       <HeroDotsField />
-      <LandingNav />
       <div
         className="-translate-x-1/2 absolute bg-linear-to-b from-[5.582%] from-[rgba(0,0,0,0)] h-[372px] left-1/2 to-1/2 to-black w-[1440px]"
         style={{ top: HERO_STATS_FADE_TOP }}
