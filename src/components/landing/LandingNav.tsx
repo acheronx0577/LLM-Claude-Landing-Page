@@ -30,7 +30,7 @@ export default function LandingNav() {
       <button
         type="button"
         onClick={() => handleNav("home")}
-        className="flex items-center justify-center relative shrink-0 cursor-pointer rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff541f]"
+        className="flex items-center justify-center relative shrink-0 cursor-pointer rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff541f]"
         aria-label="Scroll to top"
       >
         <div className="-scale-y-100 flex-none rotate-180">
@@ -67,7 +67,7 @@ export default function LandingNav() {
               type="button"
               onClick={() => handleNav(id)}
               aria-current={isActive ? "page" : undefined}
-              className={`relative shrink-0 cursor-pointer rounded-sm pb-2 font-['Sk-Modernist:Regular',sans-serif] text-[22px] leading-[normal] transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff541f] ${
+              className={`relative shrink-0 cursor-pointer rounded-sm pb-2 font-['Sk-Modernist:Regular',sans-serif] text-[22px] leading-[normal] transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff541f] ${
                 isActive
                   ? "font-['Sk-Modernist:Bold',sans-serif] text-white"
                   : "text-white/90 hover:text-white"
@@ -88,7 +88,7 @@ export default function LandingNav() {
       <button
         type="button"
         onClick={() => scrollTo("pricing")}
-        className="bg-[#ff541f] content-stretch flex items-center justify-center overflow-clip px-[35px] py-[15px] relative rounded-[10px] shrink-0 cursor-pointer transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:scale-100 motion-reduce:active:scale-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+        className="bg-[#ff541f] content-stretch flex items-center justify-center overflow-clip px-[35px] py-[15px] relative rounded-[10px] shrink-0 cursor-pointer transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] motion-reduce:transition-none motion-reduce:hover:scale-100 motion-reduce:active:scale-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
         data-name="Link"
       >
         <span className="font-['Sk-Modernist:Bold',sans-serif] text-[20px] text-white leading-[19.2px]">

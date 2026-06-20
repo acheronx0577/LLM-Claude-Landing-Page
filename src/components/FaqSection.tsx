@@ -104,7 +104,7 @@ export default function FaqSection() {
                 id={buttonId}
                 aria-expanded={open}
                 aria-controls={panelId}
-                className="relative flex w-full cursor-pointer items-start justify-between rounded-sm p-[23.85px] text-left transition-colors duration-200 hover:bg-white/2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff541f]"
+                className="relative flex w-full cursor-pointer items-start justify-between rounded-sm p-[23.85px] text-left transition-colors duration-200 hover:bg-white/2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff541f]"
                 onClick={() => setOpenIndex(open ? -1 : index)}
               >
                 <div className="min-w-0 flex-1 pr-4">
