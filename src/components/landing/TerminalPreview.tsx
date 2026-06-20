@@ -91,7 +91,7 @@ function Mono({
 }) {
   return (
     <span
-      className={`font-['Consolas','Monaco','Courier_New',monospace] text-[12.5px] leading-[20px] ${className}`}
+      className={`font-sans text-[12.5px] leading-[20px] ${className}`}
     >
       {children}
     </span>
@@ -117,7 +117,7 @@ function DashboardRow({
 function HorizontalFill() {
   return (
     <span
-      className="block min-w-0 flex-1 overflow-hidden whitespace-nowrap font-['Consolas','Monaco','Courier_New',monospace] text-[12.5px] leading-[20px] text-white"
+      className="block min-w-0 flex-1 overflow-hidden whitespace-nowrap font-sans text-[12.5px] leading-[20px] text-white"
       aria-hidden
     >
       {"━".repeat(500)}

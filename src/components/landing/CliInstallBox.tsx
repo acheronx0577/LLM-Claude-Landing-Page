@@ -83,12 +83,12 @@ export default function CliInstallBox() {
           >
             {copied ? <CheckIcon /> : <CopyIcon />}
           </button>
-          <code className="whitespace-nowrap font-['Consolas','Monaco','Courier_New',monospace] text-[14px] leading-[20px] text-[rgba(255,255,255,0.92)]">
+          <code className="whitespace-nowrap font-sans text-[14px] leading-[20px] text-[rgba(255,255,255,0.92)]">
             {LLM_CLAUDE_INSTALL}
           </code>
         </div>
       </div>
-      <p className="max-w-[920px] text-center font-['Sk-Modernist:Regular',sans-serif] text-[14px] text-[rgba(255,255,255,0.62)]">
+      <p className="max-w-[920px] text-center font-sans text-[14px] text-[rgba(255,255,255,0.62)]">
         Supported on Windows, macOS, and Linux · then{" "}
         <code className="text-[rgba(255,255,255,0.65)]">bun install</code> and{" "}
         <code className="text-[rgba(255,255,255,0.65)]">.\run.ps1</code>

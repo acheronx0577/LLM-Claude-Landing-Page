@@ -38,13 +38,13 @@ export default function PricingSection() {
       data-name="Pricing-Section"
     >
       <div className="relative flex w-[780px] shrink-0 flex-col content-stretch items-center gap-[20px] text-center leading-0 [word-break:break-word] not-italic">
-        <div className="relative flex w-[600px] shrink-0 flex-col justify-center font-['Inter:Semi_Bold',sans-serif] text-[0px] font-semibold text-white">
-          <p className="font-['Sk-Modernist:Bold',sans-serif] text-[64px]">
+        <div className="relative flex w-[600px] shrink-0 flex-col justify-center font-display font-semibold text-[0px] font-semibold text-white">
+          <p className="font-display font-semibold text-[64px]">
             <span className="leading-[normal]">{`Choose the Plan That’s Right `}</span>
             <span className="leading-[normal]">for You</span>
           </p>
         </div>
-        <div className="relative flex w-min min-w-full shrink-0 flex-col justify-center font-['Sk-Modernist:Regular',sans-serif] text-[20px] text-[#d9d9d9]">
+        <div className="relative flex w-min min-w-full shrink-0 flex-col justify-center font-sans text-[20px] text-[#d9d9d9]">
           <p className="leading-[24px]">
             Giving you access to essential features and over 1,000 creative tools.
             Upgrade to the Pro Plan to unlock powerful AI capabilities, cloud
@@ -69,7 +69,7 @@ export default function PricingSection() {
             />
             <PricingTierCard
               name="Pro"
-              nameClassName="font-['Sk-Modernist:Bold',sans-serif] text-[30px] text-[#ff541f]"
+              nameClassName="font-display font-semibold text-[30px] text-[#ff541f]"
               borderClassName="rounded-[20px]"
               borderOverlayClassName="border-3 border-[#ff7044] rounded-[20px]"
               descriptionLine1="Unlock a new level of your personal"
@@ -77,7 +77,7 @@ export default function PricingSection() {
               monthly={17}
               yearly={14}
               showDiscount
-              periodSuffixClassName="font-['Inter:Regular',sans-serif] text-[16px] font-normal text-[rgba(255,255,255,0.75)]"
+              periodSuffixClassName="font-sans text-[16px] font-normal text-[rgba(255,255,255,0.75)]"
               features={[...PRO_FEATURES]}
               tickVariant="orange"
             />

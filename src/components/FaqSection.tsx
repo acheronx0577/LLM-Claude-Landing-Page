@@ -80,12 +80,12 @@ export default function FaqSection() {
       <div className="[word-break:break-word] content-stretch flex flex-col gap-[29px] items-center not-italic relative shrink-0 text-center w-[830px]">
         <h2
           id={`${baseId}-heading`}
-          className="flex flex-col font-['Sk-Modernist:Bold',sans-serif] justify-center relative shrink-0 text-[64px] text-white w-[555.708px] whitespace-pre-wrap leading-[normal]"
+          className="flex flex-col font-display font-semibold justify-center relative shrink-0 text-[64px] text-white w-[555.708px] whitespace-pre-wrap leading-[normal]"
         >
           <span className="block">{`Frequently Asked `}</span>
           <span className="block">Questions</span>
         </h2>
-        <p className="font-['Sk-Modernist:Regular',sans-serif] text-[#d9d9d9] text-[20px] leading-[28.62px] max-w-[830px]">
+        <p className="font-sans text-[#d9d9d9] text-[20px] leading-[28.62px] max-w-[830px]">
           {`Got questions about the CLI, tools, run modes, and setup? Here are the essentials.`}
         </p>
       </div>
@@ -113,7 +113,7 @@ export default function FaqSection() {
                 className="relative flex w-full cursor-pointer items-start justify-between rounded-sm p-[23.85px] text-left transition-colors duration-200 hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff541f]"
                 onClick={() => setOpenIndex(open ? -1 : index)}
               >
-                <p className="min-w-0 flex-1 pr-4 font-['Sk-Modernist:Regular',sans-serif] text-[20px] text-white leading-[28.62px]">
+                <p className="min-w-0 flex-1 pr-4 font-sans text-[20px] text-white leading-[28.62px]">
                   {item.question}
                 </p>
                 <FaqArrow open={open} />
@@ -129,7 +129,7 @@ export default function FaqSection() {
               >
                 <div className="min-h-0 overflow-hidden">
                   <p
-                    className={`px-[23.85px] pb-[23.85px] font-['Sk-Modernist:Regular',sans-serif] text-[18px] text-[#a8a8a8] leading-[23.85px] tracking-[-0.0596px] transition-opacity duration-300 ease-out motion-reduce:transition-none ${
+                    className={`px-[23.85px] pb-[23.85px] font-sans text-[18px] text-[#a8a8a8] leading-[23.85px] tracking-[-0.0596px] transition-opacity duration-300 ease-out motion-reduce:transition-none ${
                       open ? "opacity-100" : "opacity-0"
                     }`}
                   >

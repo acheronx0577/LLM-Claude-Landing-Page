@@ -61,7 +61,7 @@ export function PricingToggle() {
         type="button"
         onClick={() => setPeriod("monthly")}
         aria-pressed={period === "monthly"}
-        className={`relative z-10 rounded-[20px] px-[32px] py-[5px] font-['Sk-Modernist:Regular',sans-serif] text-[16px] leading-[24px] transition-colors duration-300 motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff541f] ${
+        className={`relative z-10 rounded-[20px] px-[32px] py-[5px] font-sans text-[16px] leading-[24px] transition-colors duration-300 motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff541f] ${
           period === "monthly" ? "text-white" : "text-[#919191]"
         }`}
       >
@@ -71,7 +71,7 @@ export function PricingToggle() {
         type="button"
         onClick={() => setPeriod("yearly")}
         aria-pressed={period === "yearly"}
-        className={`relative z-10 rounded-[20px] px-[32px] py-[5px] font-['Sk-Modernist:Regular',sans-serif] text-[16px] leading-[24px] transition-colors duration-300 motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff541f] ${
+        className={`relative z-10 rounded-[20px] px-[32px] py-[5px] font-sans text-[16px] leading-[24px] transition-colors duration-300 motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff541f] ${
           period === "yearly" ? "text-white" : "text-[#919191]"
         }`}
       >

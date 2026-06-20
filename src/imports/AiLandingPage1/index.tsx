@@ -95,8 +95,8 @@ export default function AiLandingPage({ className }: { className?: string }) {
         data-name="Numbers & Stats-Section"
       >
         <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start not-italic relative shrink-0 text-white w-[900px]" data-name="Numbers & Stats-Content">
-          <p className="font-['Sk-Modernist:Regular',sans-serif] leading-[39.7px] opacity-60 text-[16px] tracking-[-0.48px]">About LLM Claude</p>
-          <p className="font-['Sk-Modernist:Bold',sans-serif] leading-[39.169px] text-[27.978px] tracking-[-0.8393px]">
+          <p className="font-sans leading-[39.7px] opacity-60 text-[16px] tracking-[-0.48px]">About LLM Claude</p>
+          <p className="font-display font-semibold leading-[39.169px] text-[27.978px] tracking-[-0.8393px]">
             {`Whether you're completing the CodeCrafters challenge, hacking locally, or wiring an editor over ACP—this CLI keeps the agent loop small, inspectable, and tool-driven.`}
             <br aria-hidden />
             Here is what you get out of the box:
@@ -104,9 +104,9 @@ export default function AiLandingPage({ className }: { className?: string }) {
         </div>
         <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-0 place-items-start relative shrink-0">
           <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 place-items-start relative row-1" data-name="01years">
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[29.843px] ml-[1.86px] mt-[84.86px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">Built-in tools</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[20.517px] ml-[2.8px] mt-[118.44px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">Read, Write, Bash, LSP, search, and more</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">8+</p>
+            <p className="[word-break:break-word] col-1 font-sans leading-[29.843px] ml-[1.86px] mt-[84.86px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">Built-in tools</p>
+            <p className="[word-break:break-word] col-1 font-sans leading-[20.517px] ml-[2.8px] mt-[118.44px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">Read, Write, Bash, LSP, search, and more</p>
+            <p className="[word-break:break-word] col-1 font-display font-semibold leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">8+</p>
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[2.8px] mt-[128.7px] place-items-start relative row-1" data-name="images">
               <div className="col-1 flex h-[91.393px] items-center justify-center ml-[96.06px] mt-0 relative row-1 w-[193.978px]">
                 <div className="-scale-y-100 flex-none">
@@ -157,9 +157,9 @@ export default function AiLandingPage({ className }: { className?: string }) {
             </div>
           </div>
           <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[318.01px] mt-[83.93px] place-items-start relative row-1" data-name="02projects">
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[29.843px] ml-[1.86px] mt-[83px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">Run modes</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[20.517px] ml-[2.8px] mt-[118.44px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">Chat, CodeCrafters submit, and ACP</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">3</p>
+            <p className="[word-break:break-word] col-1 font-sans leading-[29.843px] ml-[1.86px] mt-[83px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">Run modes</p>
+            <p className="[word-break:break-word] col-1 font-sans leading-[20.517px] ml-[2.8px] mt-[118.44px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">Chat, CodeCrafters submit, and ACP</p>
+            <p className="[word-break:break-word] col-1 font-display font-semibold leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">3</p>
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[2.8px] mt-[162.27px] place-items-start relative row-1" data-name="images">
               <div className="col-1 h-[93.258px] ml-[49.43px] mt-0 relative row-1 w-[239.674px]" data-name="decor1">
                 <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 239.674 93.2585">
@@ -207,9 +207,9 @@ export default function AiLandingPage({ className }: { className?: string }) {
             </div>
           </div>
           <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[636.02px] mt-0 place-items-start relative row-1" data-name="03clients">
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[29.843px] ml-[1.86px] mt-[84.86px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">TypeScript codebase</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[20.517px] ml-[2.8px] mt-[118.44px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">Compiler API for LSP tools</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">98%</p>
+            <p className="[word-break:break-word] col-1 font-sans leading-[29.843px] ml-[1.86px] mt-[84.86px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">TypeScript codebase</p>
+            <p className="[word-break:break-word] col-1 font-sans leading-[20.517px] ml-[2.8px] mt-[118.44px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">Compiler API for LSP tools</p>
+            <p className="[word-break:break-word] col-1 font-display font-semibold leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">98%</p>
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[2.8px] mt-[127.76px] place-items-start relative row-1" data-name="images">
               <div className="col-1 h-[93.258px] ml-[49.43px] mt-0 relative row-1 w-[238.742px]" data-name="decor1">
                 <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 238.742 93.2585">
@@ -257,9 +257,9 @@ export default function AiLandingPage({ className }: { className?: string }) {
             </div>
           </div>
           <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[953.1px] mt-[83.93px] place-items-start relative row-1" data-name="04inwork">
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[29.843px] ml-[1.86px] mt-[82.07px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">Open source</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-[20.517px] ml-[2.8px] mt-[117.51px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">Clone and run locally today</p>
-            <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">OSS</p>
+            <p className="[word-break:break-word] col-1 font-sans leading-[29.843px] ml-[1.86px] mt-[82.07px] not-italic relative row-1 text-[22.382px] text-white tracking-[-0.6715px] whitespace-nowrap">Open source</p>
+            <p className="[word-break:break-word] col-1 font-sans leading-[20.517px] ml-[2.8px] mt-[117.51px] not-italic relative row-1 text-[#8f8e8e] text-[14.921px] tracking-[-0.4476px] whitespace-nowrap">Clone and run locally today</p>
+            <p className="[word-break:break-word] col-1 font-display font-semibold leading-[74.607px] ml-0 mt-0 not-italic relative row-1 text-[67.146px] text-white tracking-[-3.3573px] whitespace-nowrap">OSS</p>
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[2.8px] mt-[162.27px] place-items-start relative row-1">
               <div className="col-1 h-[93.258px] ml-[49.43px] mt-0 relative row-1 w-[239.674px]" data-name="decor1">
                 <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 239.674 93.2585">

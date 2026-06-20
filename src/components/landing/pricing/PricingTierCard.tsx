@@ -25,7 +25,7 @@ type PricingTierCardProps = {
 
 export default function PricingTierCard({
   name,
-  nameClassName = "font-['Sk-Modernist:Regular',sans-serif] text-[18px] text-white",
+  nameClassName = "font-sans text-[18px] text-white",
   borderClassName,
   borderOverlayClassName,
   descriptionLine1,
@@ -33,7 +33,7 @@ export default function PricingTierCard({
   monthly,
   yearly,
   showDiscount = false,
-  periodSuffixClassName = "font-['Sk-Modernist:Regular',sans-serif] text-[16px] text-[rgba(255,255,255,0.75)]",
+  periodSuffixClassName = "font-sans text-[16px] text-[rgba(255,255,255,0.75)]",
   features,
   tickVariant,
 }: PricingTierCardProps) {
@@ -53,12 +53,12 @@ export default function PricingTierCard({
           <div className={`relative flex shrink-0 flex-col justify-center ${nameClassName}`}>
             <p className="leading-[normal]">{name}</p>
           </div>
-          <div className="relative flex shrink-0 flex-col justify-center font-['Sk-Modernist:Regular',sans-serif] text-[16px] leading-0 text-[rgba(255,255,255,0.75)] [word-break:break-word] not-italic whitespace-nowrap">
+          <div className="relative flex shrink-0 flex-col justify-center font-sans text-[16px] leading-0 text-[rgba(255,255,255,0.75)] [word-break:break-word] not-italic whitespace-nowrap">
             <p className="mb-0 leading-[24px]">{descriptionLine1}</p>
             <p className="leading-[24px]">{descriptionLine2}</p>
           </div>
           <div className="relative flex shrink-0 items-center gap-[8px]" data-name="Price container">
-            <div className="relative flex shrink-0 flex-col justify-center font-['Sk-Modernist:Bold',sans-serif] text-[40px] leading-0 tracking-[-1.6px] text-white [word-break:break-word] not-italic">
+            <div className="relative flex shrink-0 flex-col justify-center font-display font-semibold text-[40px] leading-0 tracking-[-1.6px] text-white [word-break:break-word] not-italic">
               <PlanPrice monthly={monthly} yearly={yearly} />
             </div>
             <div
@@ -71,7 +71,7 @@ export default function PricingTierCard({
                 className="relative flex shrink-0 items-center justify-center rounded-[24px] bg-[#ff541f] px-[8px] py-[5px]"
                 data-name="span"
               >
-                <div className="relative flex h-[14px] w-[31.277px] shrink-0 flex-col justify-center font-['Sk-Modernist:Bold',sans-serif] text-[12px] leading-0 text-white [word-break:break-word] not-italic">
+                <div className="relative flex h-[14px] w-[31.277px] shrink-0 flex-col justify-center font-display font-semibold text-[12px] leading-0 text-white [word-break:break-word] not-italic">
                   <p className="leading-[14px]">-20%</p>
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default function PricingTierCard({
       <PricingSeparator />
       <div className="relative w-full shrink-0" data-name="Included features container">
         <div className="relative flex size-full flex-col items-start gap-[15px] px-[32px]">
-          <div className="relative flex w-full shrink-0 flex-col justify-center font-['Sk-Modernist:Regular',sans-serif] text-[16px] leading-0 text-[rgba(255,255,255,0.75)] [word-break:break-word] not-italic">
+          <div className="relative flex w-full shrink-0 flex-col justify-center font-sans text-[16px] leading-0 text-[rgba(255,255,255,0.75)] [word-break:break-word] not-italic">
             <p className="leading-[24px]">What’s included</p>
           </div>
           <div

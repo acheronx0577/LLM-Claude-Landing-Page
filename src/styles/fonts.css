@@ -1,23 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
-/* Sk-Modernist is a premium font not available on Google Fonts.
-   Map it to Inter as the closest available substitute. */
 @font-face {
-  font-family: 'Sk-Modernist';
+  font-family: "Supreme";
   font-style: normal;
   font-weight: 400;
-  src: local('Inter'), local('Inter-Regular');
+  font-display: swap;
+  src:
+    url("/fonts/Supreme-Regular.woff2") format("woff2"),
+    url("/fonts/Supreme-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Sk-Modernist';
+  font-family: "Technor";
   font-style: normal;
-  font-weight: 700;
-  src: local('Inter'), local('Inter-Bold');
+  font-weight: 600;
+  font-display: swap;
+  src:
+    url("/fonts/Technor-Semibold.woff2") format("woff2"),
+    url("/fonts/Technor-Semibold.woff") format("woff");
 }
 
-/* Tailwind v4 arbitrary font-family values like font-['Sk-Modernist:Regular',sans-serif]
-   need the family name registered */
-:root {
-  --font-sk-modernist: 'Sk-Modernist', 'Inter', sans-serif;
+@theme inline {
+  --font-sans: "Supreme", sans-serif;
+  --font-display: "Technor", "Supreme", sans-serif;
 }

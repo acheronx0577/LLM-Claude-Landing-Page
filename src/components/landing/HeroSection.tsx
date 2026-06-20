@@ -17,18 +17,18 @@ export default function HeroSection() {
           aria-hidden
           className="pointer-events-none absolute inset-0 rounded-[50.898px] border-[0.943px] border-solid border-[rgba(255,255,255,0.15)]"
         />
-        <p className="font-['Sk-Modernist:Regular',sans-serif] text-[16px] text-[rgba(255,255,255,0.75)] tracking-[-0.2px]">
+        <p className="font-sans text-[16px] text-[rgba(255,255,255,0.75)] tracking-[-0.2px]">
           Open source · TypeScript · ACP + MCP
         </p>
       </div>
 
-      <h1 className="[word-break:break-word] min-w-full w-min shrink-0 text-center font-['Sk-Modernist:Bold',sans-serif] text-[80px] not-italic leading-[1.1] text-white">
+      <h1 className="[word-break:break-word] min-w-full w-min shrink-0 text-center font-display font-semibold text-[80px] not-italic leading-[1.1] text-white">
         <span>Code smarter, in your </span>
         <span className="text-[#ff541f]">terminal</span>
         <span>.</span>
       </h1>
 
-      <p className="[word-break:break-word] w-full max-w-[920px] shrink-0 text-center font-['Sk-Modernist:Regular',sans-serif] text-[22px] not-italic leading-[normal] text-[rgba(255,255,255,0.7)]">
+      <p className="[word-break:break-word] w-full max-w-[920px] shrink-0 text-center font-sans text-[22px] not-italic leading-[normal] text-[rgba(255,255,255,0.7)]">
         LLM Claude is a terminal AI coding assistant with Read, Write, Bash, LSP
         tools, and ACP editor integration—built for Groq, OpenRouter, and your
         workflow.

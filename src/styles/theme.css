@@ -125,7 +125,7 @@
   }
 
   body {
-    @apply m-0 bg-[#010101] p-0 text-foreground;
+    @apply m-0 bg-[#010101] p-0 font-sans text-foreground;
   }
 
   html {

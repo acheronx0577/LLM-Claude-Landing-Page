@@ -22,13 +22,13 @@ function StatColumn({
   return (
     <div className="absolute top-[59px] text-center leading-normal">
       <p
-        className="-translate-x-1/2 absolute font-['Sk-Modernist:Regular',sans-serif] text-[#ff541f] text-[23px] top-px whitespace-nowrap"
+        className="-translate-x-1/2 absolute font-sans text-[#ff541f] text-[23px] top-px whitespace-nowrap"
         style={{ left: centerX }}
       >
         {label}
       </p>
       <p
-        className="-translate-x-1/2 absolute font-['Sk-Modernist:Bold',sans-serif] text-[46px] text-white top-[42px] whitespace-nowrap"
+        className="-translate-x-1/2 absolute font-display font-semibold text-[46px] text-white top-[42px] whitespace-nowrap"
         style={{ left: centerX }}
       >
         {value}

@@ -18,13 +18,13 @@ export default function FeaturesSection() {
         data-name="Container"
       >
         <div className="absolute left-0 right-0 top-0 h-[211px]" data-name="Heading 2">
-          <p className="[word-break:break-word] absolute left-0 top-0 w-[675.81px] font-['Sk-Modernist:Regular',sans-serif] text-[64px] leading-[70.4px] not-italic text-white">
+          <p className="[word-break:break-word] absolute left-0 top-0 w-[675.81px] font-sans text-[64px] leading-[70.4px] not-italic text-white">
             <span>{`Built for the terminal. Powered by `}</span>
-            <span className="font-['Sk-Modernist:Bold',sans-serif] text-[#ff541f]">AI</span>
+            <span className="font-display font-semibold text-[#ff541f]">AI</span>
             <span>.</span>
           </p>
         </div>
-        <div className="[word-break:break-word] absolute left-0 top-[230px] w-[661px] whitespace-pre-wrap font-['Sk-Modernist:Regular',sans-serif] text-[18px] leading-[21.6px] not-italic text-[rgba(255,255,255,0.85)]">
+        <div className="[word-break:break-word] absolute left-0 top-[230px] w-[661px] whitespace-pre-wrap font-sans text-[18px] leading-[21.6px] not-italic text-[rgba(255,255,255,0.85)]">
           <p className="mb-0">{`Agent loop with tool calling, LSP intelligence, and editor integration.`}</p>
           <p>Read, write, bash, and ship from one CLI.</p>
         </div>

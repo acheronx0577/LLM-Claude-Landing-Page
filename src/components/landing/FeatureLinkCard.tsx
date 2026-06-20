@@ -75,7 +75,7 @@ export default function FeatureLinkCard({
   return (
     <div className={className} style={style} data-name="Link">
       <p
-        className={`[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] text-[18px] leading-[19.2px] not-italic text-[rgba(217,217,217,0.85)] ${descriptionClassName}`}
+        className={`[word-break:break-word] absolute font-sans text-[18px] leading-[19.2px] not-italic text-[rgba(217,217,217,0.85)] ${descriptionClassName}`}
       >
         {description}
       </p>
@@ -87,7 +87,7 @@ export default function FeatureLinkCard({
         <FeatureArrowIcon />
       )}
       <p
-        className={`[word-break:break-word] absolute font-['Sk-Modernist:Regular',sans-serif] text-[34px] leading-[40.8px] not-italic whitespace-nowrap text-white ${titleClassName}`}
+        className={`[word-break:break-word] absolute font-sans text-[34px] leading-[40.8px] not-italic whitespace-nowrap text-white ${titleClassName}`}
       >
         {title}
       </p>

@@ -44,10 +44,10 @@ export default function FooterSection({
                 className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 place-items-start relative row-1"
                 data-name="Content 1"
               >
-                <p className="col-1 font-['Sk-Modernist:Bold',sans-serif] leading-[1.3] ml-0 mt-0 relative row-1 text-[32px] text-white tracking-[-0.9545px] whitespace-nowrap">
+                <p className="col-1 font-display font-semibold leading-[1.3] ml-0 mt-0 relative row-1 text-[32px] text-white tracking-[-0.9545px] whitespace-nowrap">
                   LLM Claude
                 </p>
-                <p className="col-1 font-['Sk-Modernist:Regular',sans-serif] leading-normal ml-0 mt-[63px] relative row-1 text-[#bcbcbc] text-[18px] w-[307.341px]">
+                <p className="col-1 font-sans leading-normal ml-0 mt-[63px] relative row-1 text-[#bcbcbc] text-[18px] w-[307.341px]">
                   Open-source terminal agent for the CodeCrafters
                   challenge—TypeScript, Bun, tool calling, LSP intelligence, ACP
                   editor support, and optional MCP servers.
@@ -57,11 +57,11 @@ export default function FooterSection({
                 className="col-1 content-stretch flex flex-col gap-[22.907px] items-start ml-[450.51px] mt-0 relative row-1 whitespace-nowrap"
                 data-name="Content 2"
               >
-                <div className="flex flex-col font-['Sk-Modernist:Bold',sans-serif] justify-center relative shrink-0 text-[#ff541f] text-[24px] tracking-[-0.4772px]">
+                <div className="flex flex-col font-display font-semibold justify-center relative shrink-0 text-[#ff541f] text-[24px] tracking-[-0.4772px]">
                   <p className="leading-[1.4]">Project</p>
                 </div>
                 <div
-                  className="content-stretch flex flex-col font-['Sk-Modernist:Regular',sans-serif] gap-[15.272px] items-start relative shrink-0 text-[#bcbcbc] text-[18px]"
+                  className="content-stretch flex flex-col font-sans gap-[15.272px] items-start relative shrink-0 text-[#bcbcbc] text-[18px]"
                   data-name="List"
                 >
                   <p className="leading-normal">GitHub repo</p>
@@ -74,11 +74,11 @@ export default function FooterSection({
                 className="col-1 content-stretch flex flex-col gap-[22.907px] items-start ml-[730.17px] mt-0 relative row-1 whitespace-nowrap"
                 data-name="Content 4"
               >
-                <div className="flex flex-col font-['Sk-Modernist:Bold',sans-serif] justify-center relative shrink-0 text-[#ff541f] text-[24px] tracking-[-0.4772px]">
+                <div className="flex flex-col font-display font-semibold justify-center relative shrink-0 text-[#ff541f] text-[24px] tracking-[-0.4772px]">
                   <p className="leading-[1.4]">Docs</p>
                 </div>
                 <div
-                  className="content-stretch flex flex-col font-['Sk-Modernist:Regular',sans-serif] gap-[15.272px] items-start relative shrink-0 text-[#bcbcbc] text-[18px]"
+                  className="content-stretch flex flex-col font-sans gap-[15.272px] items-start relative shrink-0 text-[#bcbcbc] text-[18px]"
                   data-name="List"
                 >
                   <p className="leading-normal">Local setup</p>
@@ -91,11 +91,11 @@ export default function FooterSection({
                 className="col-1 content-stretch flex flex-col gap-[22.907px] items-start ml-[1041.33px] mt-0 relative row-1 whitespace-nowrap"
                 data-name="Content 3"
               >
-                <div className="flex flex-col font-['Sk-Modernist:Bold',sans-serif] justify-center relative shrink-0 text-[#ff541f] text-[24px] tracking-[-0.4772px]">
+                <div className="flex flex-col font-display font-semibold justify-center relative shrink-0 text-[#ff541f] text-[24px] tracking-[-0.4772px]">
                   <p className="leading-[1.4]">Source</p>
                 </div>
                 <div
-                  className="content-stretch flex flex-col font-['Sk-Modernist:Regular',sans-serif] gap-[22.907px] items-start relative shrink-0 text-[#bcbcbc] text-[18px]"
+                  className="content-stretch flex flex-col font-sans gap-[22.907px] items-start relative shrink-0 text-[#bcbcbc] text-[18px]"
                   data-name="List"
                 >
                   <p className="leading-normal">
@@ -165,7 +165,7 @@ export default function FooterSection({
                   </div>
                 ))}
               </div>
-              <p className="[word-break:break-word] col-1 font-['Sk-Modernist:Regular',sans-serif] leading-normal ml-0 mt-[3.8px] not-italic relative row-1 text-[18px] text-white whitespace-nowrap">
+              <p className="[word-break:break-word] col-1 font-sans leading-normal ml-0 mt-[3.8px] not-italic relative row-1 text-[18px] text-white whitespace-nowrap">
                 © 2026 LLM Claude. Open source.
               </p>
             </div>

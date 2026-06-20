@@ -23,7 +23,7 @@ export function PricingGlowButton() {
           aria-hidden
           className="pointer-events-none absolute inset-0 rounded-[8px] border border-solid border-white shadow-[0px_1px_0px_0px_rgba(0,0,0,0.05),0px_4px_4px_0px_rgba(0,0,0,0.05),0px_10px_10px_0px_rgba(0,0,0,0.1)]"
         />
-        <div className="relative flex shrink-0 flex-col justify-center font-['Sk-Modernist:Regular',sans-serif] text-[18px] leading-0 whitespace-nowrap text-white [word-break:break-word] not-italic">
+        <div className="relative flex shrink-0 flex-col justify-center font-sans text-[18px] leading-0 whitespace-nowrap text-white [word-break:break-word] not-italic">
           <p className="leading-[normal]">Subscribe</p>
         </div>
         <div className="relative size-[24px] shrink-0" data-name="Chevron Right">
@@ -137,7 +137,7 @@ export function PricingFeatureRow({
       data-name="Feature item"
     >
       <PricingTickIcon variant={tickVariant} />
-      <div className="relative flex min-w-px flex-[1_0_0] flex-col justify-center font-['Sk-Modernist:Regular',sans-serif] text-[16px] leading-0 text-[rgba(255,255,255,0.75)] [word-break:break-word] not-italic">
+      <div className="relative flex min-w-px flex-[1_0_0] flex-col justify-center font-sans text-[16px] leading-0 text-[rgba(255,255,255,0.75)] [word-break:break-word] not-italic">
         <p className="leading-[24px]">{label}</p>
       </div>
     </div>

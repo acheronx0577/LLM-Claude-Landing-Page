@@ -33,7 +33,7 @@ export default function ScrollCta({
         onClick={() => scrollTo(target)}
         className={`group relative rounded-[10px] shrink-0 ${outlineInteractiveClass} ${className}`}
       >
-        <span className="content-stretch flex items-center justify-center overflow-clip px-[35px] py-[15px] relative rounded-[inherit] font-['Sk-Modernist:Regular',sans-serif] text-[20px] text-white leading-[19.2px]">
+        <span className="content-stretch flex items-center justify-center overflow-clip px-[35px] py-[15px] relative rounded-[inherit] font-sans text-[20px] text-white leading-[19.2px]">
           {children}
         </span>
         <span
@@ -51,7 +51,7 @@ export default function ScrollCta({
         onClick={() => scrollTo(target)}
         className={`bg-[#ff541f] content-stretch flex gap-[12px] items-center justify-center overflow-clip px-[34px] py-[15px] relative rounded-[10px] shrink-0 ${primaryInteractiveClass} ${className}`}
       >
-        <span className="font-['Sk-Modernist:Bold',sans-serif] text-[20px] text-white leading-[19.2px]">
+        <span className="font-display font-semibold text-[20px] text-white leading-[19.2px]">
           {children}
         </span>
         <span className="h-[16.1px] relative shrink-0 w-[23px]">
@@ -74,7 +74,7 @@ export default function ScrollCta({
       onClick={() => scrollTo(target)}
       className={`bg-[#ff541f] content-stretch flex items-center justify-center overflow-clip px-[35px] py-[15px] relative rounded-[10px] shrink-0 ${primaryInteractiveClass} ${className}`}
     >
-      <span className="font-['Sk-Modernist:Bold',sans-serif] text-[20px] text-white leading-[19.2px]">
+      <span className="font-display font-semibold text-[20px] text-white leading-[19.2px]">
         {children}
       </span>
     </button>

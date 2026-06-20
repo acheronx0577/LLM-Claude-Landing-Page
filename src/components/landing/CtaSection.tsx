@@ -37,11 +37,11 @@ export default function CtaSection() {
         <div className="relative flex h-full flex-col items-center justify-center gap-[35px] px-[56px] py-[48px]">
           <h2
             id="cta-heading"
-            className="max-w-[789px] text-center font-['Sk-Modernist:Bold',sans-serif] text-[64px] leading-[normal] text-white"
+            className="max-w-[789px] text-center font-display font-semibold text-[64px] leading-[normal] text-white"
           >
             Ready to run it locally?
           </h2>
-          <p className="max-w-[618px] text-center font-['Sk-Modernist:Regular',sans-serif] text-[20px] leading-[22.4px] text-[rgba(255,255,255,0.88)]">
+          <p className="max-w-[618px] text-center font-sans text-[20px] leading-[22.4px] text-[rgba(255,255,255,0.88)]">
             Clone the repo, add your API key, and start chatting in the
             terminal, or wire it into your editor over ACP.
           </p>
