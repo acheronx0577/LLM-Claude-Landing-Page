@@ -80,10 +80,9 @@ export default function FaqSection() {
       <div className="[word-break:break-word] content-stretch flex flex-col gap-[29px] items-center not-italic relative shrink-0 text-center w-[830px]">
         <h2
           id={`${baseId}-heading`}
-          className="flex flex-col font-display font-semibold justify-center relative shrink-0 text-[64px] text-white w-[555.708px] whitespace-pre-wrap leading-[normal]"
+          className="font-display font-semibold relative shrink-0 text-[64px] text-white leading-[normal] whitespace-nowrap"
         >
-          <span className="block">{`Frequently Asked `}</span>
-          <span className="block">Questions</span>
+          Frequently Asked Questions
         </h2>
         <p className="font-sans text-[#d9d9d9] text-[20px] leading-[28.62px] max-w-[830px]">
           {`Got questions about the CLI, tools, run modes, and setup? Here are the essentials.`}

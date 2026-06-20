@@ -1,4 +1,5 @@
 import PricingTierCard from "@/components/landing/pricing/PricingTierCard";
+import ChromaSpotlight from "@/components/ChromaGrid/ChromaSpotlight";
 import {
   PricingPeriodProvider,
   PricingToggle,
@@ -38,7 +39,7 @@ export default function PricingSection() {
       data-name="Pricing-Section"
     >
       <div className="relative flex w-[780px] shrink-0 flex-col content-stretch items-center gap-[20px] text-center leading-0 [word-break:break-word] not-italic">
-        <div className="relative flex w-[600px] shrink-0 flex-col justify-center font-display font-semibold text-[0px] font-semibold text-white">
+        <div className="relative flex w-[600px] shrink-0 flex-col justify-center font-display font-semibold text-white">
           <p className="font-display font-semibold text-[64px]">
             <span className="leading-[normal]">{`Choose the Plan That’s Right `}</span>
             <span className="leading-[normal]">for You</span>
@@ -55,9 +56,10 @@ export default function PricingSection() {
       <PricingPeriodProvider>
         <div className="relative flex w-full shrink-0 flex-col content-stretch items-center gap-[25px]">
           <PricingToggle />
-          <div className="relative flex w-full shrink-0 items-center">
+          <ChromaSpotlight className="relative flex w-full shrink-0 items-center" radius={380}>
             <PricingTierCard
               name="Free"
+              borderColor="rgba(255,255,255,0.35)"
               borderClassName="rounded-bl-[20px] rounded-tl-[20px]"
               borderOverlayClassName="border border-[rgba(255,255,255,0.1)] rounded-bl-[20px] rounded-tl-[20px]"
               descriptionLine1="Everything you need to supercharge your"
@@ -69,6 +71,7 @@ export default function PricingSection() {
             />
             <PricingTierCard
               name="Pro"
+              borderColor="#ff7044"
               nameClassName="font-display font-semibold text-[30px] text-[#ff541f]"
               borderClassName="rounded-[20px]"
               borderOverlayClassName="border-3 border-[#ff7044] rounded-[20px]"
@@ -83,6 +86,7 @@ export default function PricingSection() {
             />
             <PricingTierCard
               name="Team"
+              borderColor="rgba(255,255,255,0.35)"
               borderClassName="rounded-br-[20px] rounded-tr-[20px]"
               borderOverlayClassName="border border-[rgba(255,255,255,0.1)] rounded-br-[20px] rounded-tr-[20px]"
               descriptionLine1="Everything you need to supercharge your"
@@ -93,7 +97,7 @@ export default function PricingSection() {
               features={[...TEAM_FEATURES]}
               tickVariant="white"
             />
-          </div>
+          </ChromaSpotlight>
         </div>
       </PricingPeriodProvider>
     </div>

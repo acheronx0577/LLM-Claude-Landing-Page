@@ -1,4 +1,5 @@
 import FeatureLinkCard from "@/components/landing/FeatureLinkCard";
+import ChromaSpotlight from "@/components/ChromaGrid/ChromaSpotlight";
 import { FEATURES_SECTION_TOP } from "@/components/landing/layout";
 import svgPaths from "@/imports/AiLandingPage1/svg-3a59wk3hgj";
 
@@ -29,8 +30,9 @@ export default function FeaturesSection() {
           <p>Read, write, bash, and ship from one CLI.</p>
         </div>
       </div>
-      <div
+      <ChromaSpotlight
         className="absolute left-0 right-0 top-[320px] h-[668px] overflow-clip"
+        radius={360}
         data-name="Container"
       >
         <FeatureLinkCard
@@ -62,7 +64,7 @@ export default function FeaturesSection() {
           descriptionClassName="absolute left-[20px] top-[19px] w-[327.36px]"
           title="ACP & MCP"
         />
-      </div>
+      </ChromaSpotlight>
       <div
         className="absolute flex inset-[-2.37%_9.99%_70.16%_71.92%] items-center justify-center overflow-visible"
         style={{ containerType: "size" }}

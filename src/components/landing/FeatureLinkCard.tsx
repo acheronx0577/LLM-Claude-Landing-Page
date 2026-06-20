@@ -1,4 +1,5 @@
 import svgPaths from "@/imports/AiLandingPage1/svg-3a59wk3hgj";
+import ChromaCard from "@/components/ChromaGrid/ChromaCard";
 
 function FeatureArrowIcon() {
   return (
@@ -61,6 +62,7 @@ type FeatureLinkCardProps = {
   titleClassName?: string;
   style?: React.CSSProperties;
   arrowClassName?: string;
+  borderColor?: string;
 };
 
 export default function FeatureLinkCard({
@@ -71,9 +73,16 @@ export default function FeatureLinkCard({
   titleClassName = "absolute left-[20px] top-[124.2px]",
   style,
   arrowClassName,
+  borderColor = "#ff541f",
 }: FeatureLinkCardProps) {
   return (
-    <div className={className} style={style} data-name="Link">
+    <ChromaCard
+      className={className}
+      style={style}
+      borderColor={borderColor}
+      data-name="Link"
+    >
+      <div className="absolute inset-0 z-[2]">
       <p
         className={`[word-break:break-word] absolute font-sans text-[18px] leading-[19.2px] not-italic text-[rgba(217,217,217,0.85)] ${descriptionClassName}`}
       >
@@ -91,6 +100,7 @@ export default function FeatureLinkCard({
       >
         {title}
       </p>
-    </div>
+      </div>
+    </ChromaCard>
   );
 }

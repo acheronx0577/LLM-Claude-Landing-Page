@@ -2,6 +2,7 @@ import {
   PlanPeriodSuffix,
   PlanPrice,
 } from "@/components/landing/PricingPeriod";
+import ChromaCard from "@/components/ChromaGrid/ChromaCard";
 import {
   PricingFeatureRow,
   PricingGlowButton,
@@ -21,6 +22,7 @@ type PricingTierCardProps = {
   periodSuffixClassName?: string;
   features: string[];
   tickVariant: "white" | "orange";
+  borderColor?: string;
 };
 
 export default function PricingTierCard({
@@ -36,12 +38,15 @@ export default function PricingTierCard({
   periodSuffixClassName = "font-sans text-[16px] text-[rgba(255,255,255,0.75)]",
   features,
   tickVariant,
+  borderColor = "#ff541f",
 }: PricingTierCardProps) {
   return (
-    <div
+    <ChromaCard
       className={`relative flex w-[399.78px] shrink-0 flex-col items-center gap-[35px] bg-[#1b1b1c] px-[30px] py-[20px] ${borderClassName}`}
+      borderColor={borderColor}
       data-name="Main container"
     >
+      <div className="relative z-[2] flex w-full flex-col items-center gap-[35px]">
       <div
         aria-hidden
         className={`pointer-events-none absolute inset-0 border-solid ${borderOverlayClassName}`}
@@ -100,6 +105,7 @@ export default function PricingTierCard({
         </div>
       </div>
       <PricingGlowButton />
-    </div>
+      </div>
+    </ChromaCard>
   );
 }
