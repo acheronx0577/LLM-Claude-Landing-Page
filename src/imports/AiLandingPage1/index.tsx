@@ -81,8 +81,9 @@ export default function AiLandingPage({ className }: { className?: string }) {
       </div>
       <HeroDotsField />
       <div
-        className="-translate-x-1/2 absolute bg-linear-to-b from-[5.582%] from-[rgba(0,0,0,0)] h-[372px] left-1/2 to-1/2 to-black w-[1440px]"
+        className="-translate-x-1/2 pointer-events-none absolute left-1/2 z-[1] h-[372px] w-[1440px] bg-linear-to-b from-[5.582%] from-[rgba(0,0,0,0)] to-1/2 to-black"
         style={{ top: HERO_STATS_FADE_TOP }}
+        aria-hidden
       />
       <HeroStatsBar />
       <PricingSection />

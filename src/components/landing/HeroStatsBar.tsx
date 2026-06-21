@@ -46,12 +46,12 @@ export default function HeroStatsBar() {
 
   return (
     <div
-      className="-translate-x-1/2 absolute left-1/2 w-[1440px] overflow-clip border border-[rgba(255,255,255,0.1)] border-solid"
+      className="-translate-x-1/2 absolute left-1/2 z-10 w-[1440px] overflow-clip border border-[rgba(255,255,255,0.1)] border-solid bg-[#010101]"
       style={{ top: HERO_STATS_TOP }}
       data-name="Stats"
       aria-labelledby={HERO_TECH_STACK_TITLE_ID}
     >
-      <div className="relative h-[214px] overflow-clip">
+      <div className="relative h-[214px] overflow-clip bg-[#010101]">
         {STATS.map((stat, index) => (
           <StatColumn
             key={stat.label}
