@@ -2,6 +2,8 @@
 
 import { ConvexProvider, ConvexReactClient } from "convex/react";
 import { useMemo, type ReactNode } from "react";
+import SiteMetricsHub from "@/components/landing/SiteMetricsHub";
+import SiteMetricsHubOffline from "@/components/landing/SiteMetricsHubOffline";
 
 export default function ConvexClientProvider({
   children,
@@ -15,8 +17,18 @@ export default function ConvexClientProvider({
   );
 
   if (!convex) {
-    return <>{children}</>;
+    return (
+      <>
+        {children}
+        <SiteMetricsHubOffline />
+      </>
+    );
   }
 
-  return <ConvexProvider client={convex}>{children}</ConvexProvider>;
+  return (
+    <ConvexProvider client={convex}>
+      {children}
+      <SiteMetricsHub />
+    </ConvexProvider>
+  );
 }

@@ -2,6 +2,14 @@ import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
 
 export default defineSchema({
+  siteStats: defineTable({
+    key: v.string(),
+    views: v.number(),
+  }).index("by_key", ["key"]),
+  siteVisitSessions: defineTable({
+    visitorId: v.string(),
+    visitedAt: v.number(),
+  }).index("by_visitorId", ["visitorId"]),
   contactSubmissions: defineTable({
     name: v.string(),
     email: v.string(),

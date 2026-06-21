@@ -3,6 +3,7 @@ import ConvexClientProvider from "@/components/ConvexClientProvider";
 import SmoothScroll from "@/components/SmoothScroll";
 import "lenis/dist/lenis.css";
 import "@/styles/index.css";
+import "@/styles/site-metrics.css";
 
 export const metadata: Metadata = {
   title: "LLM Claude — Terminal AI Coding Assistant",

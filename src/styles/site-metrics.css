@@ -1,0 +1,206 @@
+.site-metrics {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 50;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.site-metrics-shell {
+  pointer-events: auto;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  border: 1px solid rgba(255, 84, 31, 0.35);
+  border-left: 0;
+  border-radius: 0 1.35rem 1.35rem 0;
+  background: rgba(1, 1, 1, 0.92);
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.55);
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
+  backdrop-filter: blur(18px) saturate(125%);
+  isolation: isolate;
+  transform: translateZ(0);
+}
+
+.site-metrics-toggle {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: #ff541f;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.site-metrics-toggle:hover {
+  color: #ff7a52;
+}
+
+.site-metrics-toggle:focus-visible {
+  outline: 2px solid #ff541f;
+  outline-offset: 2px;
+}
+
+.site-metrics-chevron {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg) translateX(-1px);
+  transition: transform 0.3s ease-out;
+}
+
+.site-metrics.is-open .site-metrics-chevron {
+  transform: rotate(135deg) translate(-1px, 1px);
+}
+
+.site-metrics-panel {
+  max-width: 0;
+  overflow: hidden;
+  transition: max-width 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.site-metrics.is-open .site-metrics-panel {
+  max-width: min(15rem, 82vw);
+}
+
+.site-metrics-inner {
+  display: flex;
+  width: min(15rem, 82vw);
+  min-width: min(15rem, 82vw);
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 12px 12px 10px;
+  border-left: 1px solid rgba(255, 84, 31, 0.15);
+}
+
+.site-metrics-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.site-metrics-views-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.site-metrics-views-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 500;
+}
+
+.site-metrics-views-value {
+  flex-shrink: 0;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+
+.site-metrics-grid-section {
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.site-metrics-grid-label {
+  margin: 0 0 8px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 84, 31, 0.75);
+}
+
+.site-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 12px;
+  margin: 0;
+}
+
+.site-metrics-row {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.site-metrics-row dt {
+  margin: 0;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.site-metrics-row dd {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+
+.site-metrics-row dd.is-ok {
+  color: #ff541f;
+}
+
+.site-metrics-row dd.is-warn {
+  color: #f0b86e;
+}
+
+.site-metrics-row dd.is-hot {
+  color: #f08c7a;
+}
+
+.site-metrics-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.site-metrics-github:hover {
+  color: #fff;
+  border-color: rgba(255, 84, 31, 0.45);
+  background: rgba(255, 84, 31, 0.08);
+}
+
+.site-metrics-github-icon {
+  flex-shrink: 0;
+}

@@ -11,6 +11,7 @@
 import type * as contact from "../contact.js";
 import type * as contactMutations from "../contactMutations.js";
 import type * as contactRateLimit from "../contactRateLimit.js";
+import type * as siteStats from "../siteStats.js";
 
 import type {
   ApiFromModules,
@@ -22,6 +23,7 @@ declare const fullApi: ApiFromModules<{
   contact: typeof contact;
   contactMutations: typeof contactMutations;
   contactRateLimit: typeof contactRateLimit;
+  siteStats: typeof siteStats;
 }>;
 
 /**
