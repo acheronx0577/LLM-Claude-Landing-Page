@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ConvexClientProvider from "@/components/ConvexClientProvider";
 import SmoothScroll from "@/components/SmoothScroll";
 import "lenis/dist/lenis.css";
 import "@/styles/index.css";
@@ -23,7 +24,9 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        <SmoothScroll>{children}</SmoothScroll>
+        <ConvexClientProvider>
+          <SmoothScroll>{children}</SmoothScroll>
+        </ConvexClientProvider>
       </body>
     </html>
   );

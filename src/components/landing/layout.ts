@@ -35,7 +35,7 @@ const FAQ_TOP_OFFSET = 52;
 /** FAQ with one accordion open (~940px content + heading). */
 const FAQ_BLOCK_HEIGHT = 940;
 const CTA_BLOCK_HEIGHT = 375;
-export const FOOTER_BLOCK_HEIGHT = 500;
+export const FOOTER_BLOCK_HEIGHT = 560;
 
 export const SECTION_FAQ_TOP =
   SECTION_PRICING_TOP + PRICING_BLOCK_HEIGHT + SECTION_GAP + FAQ_TOP_OFFSET;
