@@ -1,6 +1,6 @@
 # LLM Claude — Landing Page
 
-Next.js landing page for an open-source terminal AI coding assistant. Built from a [Figma Make template](https://www.figma.com/design/ZTIyTbYFe5nvvHUmC3p80f/Convert-Template-to-Code). Includes smooth Lenis scrolling, GSAP-style hero visuals, interactive FAQ accordion, pricing toggle, and a collapsible left-edge **site metrics** panel (visitor count + server stats).
+Next.js landing page for an open-source terminal AI coding assistant. Includes smooth Lenis scrolling, GSAP-style hero visuals, interactive FAQ accordion, pricing toggle, and a collapsible left-edge **site metrics** panel (visitor count + server stats).
 
 Inspired by the [MNTN landing page](https://github.com/acheronx0577/MNTN) visitor/metrics hub pattern — here backed by **Convex** instead of PocketBase.
 
